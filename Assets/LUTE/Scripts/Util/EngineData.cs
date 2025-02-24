@@ -184,7 +184,8 @@ public class EngineData
         }
 
         if (!settingsOnly)
-        { // save all the completition states on the nodes
+        {
+            // save all the completition states on the nodes
             var nodes = engine.GetComponents<Node>();
             foreach (Node node in nodes)
             {

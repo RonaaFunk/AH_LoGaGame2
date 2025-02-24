@@ -1,7 +1,6 @@
-using UnityEngine;
-using UnityEditor;
 using MoreMountains.InventoryEngine;
 using System.Linq;
+using UnityEditor;
 
 [CustomEditor(typeof(AddItem))]
 public class AddItemEditor : OrderEditor
@@ -18,7 +17,7 @@ public class AddItemEditor : OrderEditor
         base.OnEnable();
         itemProp = serializedObject.FindProperty("item");
         amountProp = serializedObject.FindProperty("amount");
-        feedbackProp = serializedObject.FindProperty("feedback");
+        feedbackProp = serializedObject.FindProperty("giveSound");
         persistentProp = serializedObject.FindProperty("persistentItem");
         itemAlreadyInventoryProp = serializedObject.FindProperty("addIfAlreadyInInventory");
     }

@@ -1,4 +1,3 @@
-using MoreMountains.Feedbacks;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -23,8 +22,8 @@ public class Sticker : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragH
     [SerializeField] protected float minScale = 0.5f;
     [Tooltip("The speed at which the sticker scales")]
     [SerializeField] protected float scaleSpeed = 0.01f;
-    [Tooltip("Feedback to be played when placing sticker")]
-    [SerializeField] protected MMFeedbacks placeStickerFeedback;
+    //[Tooltip("Feedback to be played when placing sticker")]
+    //[SerializeField] protected MMFeedbacks placeStickerFeedback;
     protected RectTransform binIcon;
     protected Postcard stickerPostcard;
 
@@ -302,7 +301,7 @@ public class Sticker : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragH
         else
         {
             // If not deleting then play nice feedback for placing a sticker down
-            placeStickerFeedback?.PlayFeedbacks();
+            //placeStickerFeedback?.PlayFeedbacks();
         }
         // Finally hide the bin icon
         binIcon?.gameObject.SetActive(false);

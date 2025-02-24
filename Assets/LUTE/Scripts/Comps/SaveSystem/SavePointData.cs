@@ -31,13 +31,13 @@ public class SavePointData
     public List<SaveDataItem> SaveDataItems { get { return saveDataItems; } }
 
     /// Encodes a new Save Point to data and converts it to JSON text format.
-    public static string Encode(string _savePointKey, string _savePointDesc, string _sceneName, bool settingsOnly)
+    public static string Encode(string _savePointKey, string _savePointDesc, string _sceneName, bool settingsOnly, SaveManager.SaveProfile newProfile)
     {
         var savePointData = Create(_savePointKey, _savePointDesc, _sceneName);
-        var saveData = GameObject.FindObjectOfType<SaveData>();
+        var saveData = GameObject.FindFirstObjectByType<SaveData>();
         if (saveData != null)
         {
-            saveData.Encode(savePointData.saveDataItems, settingsOnly);
+            saveData.Encode(savePointData.saveDataItems, settingsOnly, newProfile);
         }
         return JsonUtility.ToJson(savePointData, true);
     }
@@ -61,7 +61,7 @@ public class SavePointData
             SceneManager.sceneLoaded -= onSceneLoadedAction;
 
             // Look for the SaveData component in the scene and decode the Save Point data
-            var saveData = GameObject.FindObjectOfType<SaveData>();
+            var saveData = GameObject.FindFirstObjectByType<SaveData>();
             if (saveData != null)
             {
                 saveData.Decode(savePointData.saveDataItems);

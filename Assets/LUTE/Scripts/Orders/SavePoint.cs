@@ -1,3 +1,4 @@
+using LoGaCulture.LUTE;
 using UnityEngine;
 
 #if UNITY_5_3_OR_NEWER
@@ -36,6 +37,8 @@ public class SavePoint : Order
     [SerializeField] protected string keySeperator = "_";
     [Tooltip("Description mode definition")]
     [SerializeField] protected DescriptionMode descriptionMode = DescriptionMode.Timestamp;
+    [Tooltip("The profile to save (i.e., what data to save)")]
+    [SerializeField] protected SaveManager.SaveProfile saveProfile = SaveManager.SaveProfile.EngineData;
     [Tooltip("Custom description for the Save Point")]
     [SerializeField] protected string customDescription = string.Empty;
     [Tooltip("Fire a save point loaded event when this order executes")]
@@ -88,7 +91,7 @@ public class SavePoint : Order
         {
             var saveManager = LogaManager.Instance.SaveManager;
 
-            saveManager.AddSavePoint(SavePointKey, SavePointDescription, false);
+            saveManager.AddSavePoint(SavePointKey, SavePointDescription, false, saveProfile);
 
             if (fireEvent)
             {

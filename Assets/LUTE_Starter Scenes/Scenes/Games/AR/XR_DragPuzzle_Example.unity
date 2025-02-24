@@ -234,11 +234,13 @@ GameObject:
   - component: {fileID: 543519207}
   - component: {fileID: 543519208}
   - component: {fileID: 543519209}
-  - component: {fileID: 543519210}
   - component: {fileID: 543519211}
   - component: {fileID: 543519212}
   - component: {fileID: 543519213}
   - component: {fileID: 543519214}
+  - component: {fileID: 543519215}
+  - component: {fileID: 543519216}
+  - component: {fileID: 543519217}
   m_Layer: 0
   m_Name: BasicFlowEngine
   m_TagString: Untagged
@@ -263,10 +265,8 @@ MonoBehaviour:
   description: 
   hideComponents: 1
   localizationId: 
-  selectedOrders:
-  - {fileID: 543519214}
-  selectedNodes:
-  - {fileID: 543519207}
+  selectedOrders: []
+  selectedNodes: []
   nodeViewHeight: 431
   hideOrders: []
   variables:
@@ -282,7 +282,7 @@ MonoBehaviour:
   showAnnotations: 1
   labelTint: {r: 1, g: 1, b: 1, a: 1}
   zoom: 1
-  scrollPos: {x: 0, y: -2}
+  scrollPos: {x: -4, y: -2}
   version: 1
   sidesOfDie: 6
   postcards: []
@@ -672,7 +672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 614
+    x: 613
     y: 123
     width: 112.05
     height: 40
@@ -682,9 +682,9 @@ MonoBehaviour:
   itemId: 0
   orderList:
   - {fileID: 543519209}
-  - {fileID: 543519210}
-  - {fileID: 543519211}
   - {fileID: 543519214}
+  - {fileID: 543519215}
+  - {fileID: 543519211}
   eventHandler: {fileID: 543519208}
   isGrouped: 0
   groupIndex: -1
@@ -734,20 +734,6 @@ MonoBehaviour:
   buttonSound: {fileID: 0}
   popupWindow: {fileID: 0}
   allowRedraw: 0
---- !u!114 &543519210
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 543519182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f99f6d968d6a0b4d9077bbe7cc219d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: Menu
-  hideThisOption: 0
 --- !u!114 &543519211
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -820,11 +806,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 694a2949041e0b34c90245eb4017ed7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: LevelSelect
-  sceneIndex: 0
+  sceneName:
+    stringRef: {fileID: 0}
+    stringVal: LevelSelect
+  loadingImage: {fileID: 0}
 --- !u!114 &543519214
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -845,6 +833,79 @@ MonoBehaviour:
   buttonFeedback: {fileID: 0}
   buttonSound: {fileID: 0}
   saveSettings: 0
+--- !u!114 &543519215
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543519182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33c5ebc1795c0734ea5c2c8cab643c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Restart Scene
+  description: 
+  targetNode: {fileID: 543519216}
+  hideIfVisited: 0
+  interactable: 1
+  setMenuDialogue: {fileID: 0}
+  hideThisOption: 0
+  closeMenuOnSelect: 1
+  buttonFeedback: {fileID: 0}
+  buttonSound: {fileID: 0}
+  saveSettings: 0
+--- !u!114 &543519216
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543519182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc9f689a21732a34489f55c1ed82a919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 748
+    y: 122
+    width: 129.63
+    height: 40
+  nodeName: Restart Scene
+  nodeDescription: Basic building block of a narrative engine
+  groupDescription: A series of nodes that can be executed as a group
+  itemId: 0
+  orderList:
+  - {fileID: 543519217}
+  eventHandler: {fileID: 0}
+  isGrouped: 0
+  groupIndex: -1
+  repeatable: 0
+  nodeLocation: {fileID: 0}
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  hoverStartTime: 0
+  targetUnlockNode: {fileID: 0}
+  targetKeyNode: {fileID: 0}
+  showDesc: 0
+  saveable: 0
+  NodeComplete: 0
+--- !u!114 &543519217
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543519182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cc30f427d38a5b49a8422cf35c3db9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingImage: {fileID: 0}
 --- !u!1 &958114700
 GameObject:
   m_ObjectHideFlags: 1

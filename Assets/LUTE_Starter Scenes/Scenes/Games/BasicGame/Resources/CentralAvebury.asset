@@ -15,9 +15,9 @@ MonoBehaviour:
   infoID: 1479e2c3-7de5-4396-b0a9-d24189958481
   Position: 51.42856861319775, -1.8542802086417438
   Name: Central Avebury
-  Sprite: {fileID: 21300000, guid: 3d69bf4b1f575644db3fcca0cb5c60f8, type: 3}
-  InProgressSprite: {fileID: 21300000, guid: 3d69bf4b1f575644db3fcca0cb5c60f8, type: 3}
-  CompletedSprite: {fileID: 21300000, guid: 3d69bf4b1f575644db3fcca0cb5c60f8, type: 3}
+  Sprite: {fileID: 21300000, guid: 38d01da203407b74cad749c1d8681580, type: 3}
+  InProgressSprite: {fileID: 21300000, guid: 1c632f4cb235bf247898c559eddf4f66, type: 3}
+  CompletedSprite: {fileID: 21300000, guid: 7f1f9d40832d0e349a4a04c4c59cc880, type: 3}
   Color: {r: 1, g: 1, b: 1, a: 1}
   ShowName: 0
   showRadius: 1
@@ -30,7 +30,7 @@ MonoBehaviour:
   saveInfo: 1
   indepedentMarkerUpdating: 1
   allowClickWithoutLocation: 0
-  locationStatus: 0
+  locationStatus: 1
   infoImage: {fileID: 0}
   displayName: 
   description: 

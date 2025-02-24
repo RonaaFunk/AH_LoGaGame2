@@ -1,4 +1,4 @@
-using MoreMountains.Feedbacks;
+using LoGaCulture.LUTE;
 using MoreMountains.InventoryEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -20,11 +20,11 @@ public class ContainerCard : MonoBehaviour
     [SerializeField] protected float delayBetweenUses = 0f;
     [Tooltip("if this is set to false, your number of activations will be MaxNumberOfActivations")]
     [SerializeField] protected bool unlimitedActivations = true;
-    [Header("Feedbacks")]
-    [Tooltip("Feedback to play when the zone gets activated")]
-    [SerializeField] protected MMFeedbacks activationFeedback;
-    [Tooltip("Feedback to play when the zone tries to get activated but can't")]
-    [SerializeField] protected MMFeedbacks deniedFeedback;
+    [Header("Audio")]
+    [Tooltip("Sound to play when the zone gets activated")]
+    [SerializeField] protected AudioClip activationSound;
+    [Tooltip("Sound to play when the zone tries to get activated but can't")]
+    [SerializeField] protected AudioClip deniedSound;
     [Tooltip("Close the card once opened")]
     [SerializeField] protected bool closeOnUse = true;
     [Tooltip("Whether to show a prompt when the player is opening the container")]
@@ -136,7 +136,7 @@ public class ContainerCard : MonoBehaviour
         return ActiveContainerCard;
     }
 
-    public static void CreateNewCard(bool requiresKey, string keyID, UnityEvent keyEvent, bool activable, float delayBetweenUses, bool unlimitedActivations, bool closeOnUse, MMFeedbacks openFeedback, MMFeedbacks closeFeedback, List<InventoryItem> itemsToPickup = null, List<int> itemsQuantities = null, string promtText = "", float promptFadeDuration = 0.2f, Color promptColor = new Color(), bool hideOnPlayer = false, LocationVariable locationVariable = null, BasicFlowEngine engine = null, ContainerCard customPrefab = null, AnimationClip openAnim = null, AnimationClip closeAnim = null, string promtTextOpened = null, bool showPrompt = true)
+    public static void CreateNewCard(bool requiresKey, string keyID, UnityEvent keyEvent, bool activable, float delayBetweenUses, bool unlimitedActivations, bool closeOnUse, AudioClip openFeedback, AudioClip closeFeedback, List<InventoryItem> itemsToPickup = null, List<int> itemsQuantities = null, string promtText = "", float promptFadeDuration = 0.2f, Color promptColor = new Color(), bool hideOnPlayer = false, LocationVariable locationVariable = null, BasicFlowEngine engine = null, ContainerCard customPrefab = null, AnimationClip openAnim = null, AnimationClip closeAnim = null, string promtTextOpened = null, bool showPrompt = true)
     {
         GameObject go = null;
 
@@ -160,8 +160,8 @@ public class ContainerCard : MonoBehaviour
         containerCard.delayBetweenUses = delayBetweenUses;
         containerCard.unlimitedActivations = unlimitedActivations;
         containerCard.closeOnUse = closeOnUse;
-        containerCard.activationFeedback = openFeedback;
-        containerCard.deniedFeedback = closeFeedback;
+        containerCard.activationSound = openFeedback;
+        containerCard.deniedSound = closeFeedback;
         containerCard.promptInfoError = promtText;
         containerCard.promptInfoOpened = promtTextOpened;
         containerCard.promptFadeDuration = promptFadeDuration;
@@ -214,7 +214,7 @@ public class ContainerCard : MonoBehaviour
         }
     }
 
-    public virtual void SetupCard(bool requiresKey, string keyID, UnityEvent keyEvent, bool activable, float delayBetweenUses, bool unlimitedActivations, bool closeOnUse, MMFeedbacks openFeedback, MMFeedbacks closeFeedback, List<ItemPicker> itemsToPickup = null, List<int> itemsQuantities = null, string promtText = "", float promptFadeDuration = 0.2f, Color promptColor = new Color(), bool hideOnPlayer = false, string locationVariable = "", BasicFlowEngine engine = null)
+    public virtual void SetupCard(bool requiresKey, string keyID, UnityEvent keyEvent, bool activable, float delayBetweenUses, bool unlimitedActivations, bool closeOnUse, AudioClip openFeedback, AudioClip closeFeedback, List<ItemPicker> itemsToPickup = null, List<int> itemsQuantities = null, string promtText = "", float promptFadeDuration = 0.2f, Color promptColor = new Color(), bool hideOnPlayer = false, string locationVariable = "", BasicFlowEngine engine = null)
     {
         if (!ActiveContainerCard.hasBeenSetup)
         {
@@ -226,8 +226,8 @@ public class ContainerCard : MonoBehaviour
             ActiveContainerCard.delayBetweenUses = delayBetweenUses;
             ActiveContainerCard.unlimitedActivations = unlimitedActivations;
             ActiveContainerCard.closeOnUse = closeOnUse;
-            ActiveContainerCard.activationFeedback = openFeedback;
-            ActiveContainerCard.deniedFeedback = closeFeedback;
+            ActiveContainerCard.activationSound = openFeedback;
+            ActiveContainerCard.deniedSound = closeFeedback;
             ActiveContainerCard.promptInfoError = promtText;
             // ActiveContainerCard.promptInfoOpened = promtTextOpened;
             ActiveContainerCard.promptFadeDuration = promptFadeDuration;
@@ -288,7 +288,7 @@ public class ContainerCard : MonoBehaviour
         if (inventory == null)
         {
             //find inventory in the scene
-            inventory = FindObjectOfType<Inventory>();
+            inventory = FindFirstObjectByType<Inventory>();
         }
         if (inventory == null)
         {
@@ -320,7 +320,11 @@ public class ContainerCard : MonoBehaviour
 
         //If we have to this stage then the key has been found and used
         //We can now trigger the key action
-        activationFeedback?.PlayFeedbacks(this.transform.position);
+        if (activationSound != null)
+        {
+            LogaManager.Instance.SoundManager.PlaySound(activationSound, 1.0f);
+        }
+
         TriggerKeyAction();
         isOpen = true;
         if (closeOnUse)
@@ -336,7 +340,7 @@ public class ContainerCard : MonoBehaviour
             PromptError();
             return;
         }
-        var inventory = FindObjectOfType<Inventory>();
+        var inventory = FindFirstObjectByType<Inventory>();
 
         if (inventory == null)
         {
@@ -368,7 +372,10 @@ public class ContainerCard : MonoBehaviour
 
         //If we have to this stage then the key has been found and used
         //We can now trigger the key action
-        activationFeedback?.PlayFeedbacks(this.transform.position);
+        if (activationSound != null)
+        {
+            LogaManager.Instance.SoundManager.PlaySound(activationSound, 1.0f);
+        }
         TriggerKeyAction();
         isOpen = true;
         if (closeOnUse)
@@ -393,7 +400,10 @@ public class ContainerCard : MonoBehaviour
             {
                 buttonPromptAnimator.SetTrigger("Error");
             }
-            deniedFeedback?.PlayFeedbacks(this.transform.position);
+            if (deniedSound != null)
+            {
+                LogaManager.Instance.SoundManager.PlaySound(deniedSound, 1.0f);
+            }
             if (promptText != null && !string.IsNullOrEmpty(promptInfoError))
             {
                 promptInfoText = promptInfoError;
@@ -411,7 +421,10 @@ public class ContainerCard : MonoBehaviour
             {
                 buttonPromptAnimator.SetTrigger("Error");
             }
-            deniedFeedback?.PlayFeedbacks(this.transform.position);
+            if (deniedSound != null)
+            {
+                LogaManager.Instance.SoundManager.PlaySound(deniedSound, 1.0f);
+            }
             if (promptText != null && !string.IsNullOrEmpty(promptInfoOpened))
             {
                 promptInfoText = promptInfoOpened;

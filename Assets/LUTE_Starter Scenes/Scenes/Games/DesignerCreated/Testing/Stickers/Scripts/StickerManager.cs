@@ -1,3 +1,4 @@
+using LoGaCulture.LUTE;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -21,7 +22,7 @@ public class StickerManager : MonoBehaviour
     [Tooltip("The list of postcards saved in the game")]
     [SerializeField] protected List<Postcard> postcards = new List<Postcard>();
     [Tooltip("The list of achievements saved in the game")]
-    [SerializeField] protected Achievement[] achievements;
+    //[SerializeField] protected Achievement[] achievements;
 
     public BasicFlowEngine engine;
     public Postcard GetPostcard(int index)

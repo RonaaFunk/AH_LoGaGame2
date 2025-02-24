@@ -1,4 +1,4 @@
-using MoreMountains.Feedbacks;
+using LoGaCulture.LUTE;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -14,11 +14,12 @@ public class GenericButton : Order
     [SerializeField] protected PopupIcon setIconButton;
     [Tooltip("If true, the popup icon will be displayed, otherwise it will be hidden")]
     [SerializeField] protected bool showIcon = true;
-    [Tooltip("The feedbacks to play when the button is clicked")]
-    [SerializeField] protected MMFeedbacks buttonFeedback;
+    [Tooltip("The sound to play when the button is clicked")]
+    [SerializeField] protected AudioClip buttonSound;
+    [Header("Button Event")]
+    [Space]
     [Tooltip("The event to call when the button is clicked")]
     [SerializeField] protected UnityEngine.Events.UnityEvent buttonEvent;
-    [SerializeField] protected AudioClip buttonSound;
     public override void OnEnter()
     {
         var popupIcon = SetupButton();
@@ -28,8 +29,6 @@ public class GenericButton : Order
         {
             // Call the original button event
             buttonEvent.Invoke();
-            // Play the feedbacks
-            buttonFeedback?.PlayFeedbacks();
         };
 
         SetAction(popupIcon, extendedAction.Invoke);

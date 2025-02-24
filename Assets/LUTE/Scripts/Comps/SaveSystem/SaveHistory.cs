@@ -16,12 +16,12 @@ public class SaveHistory
 
     public int TotalRewoundSavePoints { get { return rewoundSavePoints.Count; } }
 
-    public void AddSavePoint(string savePointKey, string savePointDesc, bool settingsOnly)
+    public void AddSavePoint(string savePointKey, string savePointDesc, bool settingsOnly, SaveManager.SaveProfile newProfile)
     {
         rewoundSavePoints.Clear();
 
         string sceneName = SceneManager.GetActiveScene().name;
-        var savePointData = SavePointData.Encode(savePointKey, savePointDesc, sceneName, settingsOnly);
+        var savePointData = SavePointData.Encode(savePointKey, savePointDesc, sceneName, settingsOnly, newProfile);
 
         savePoints.Add(savePointData);
     }

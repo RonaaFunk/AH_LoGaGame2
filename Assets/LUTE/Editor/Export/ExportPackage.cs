@@ -1,5 +1,4 @@
 // ExportPackage.cs
-using UnityEngine;
 using UnityEditor;
 
 public class ExportPackage
@@ -8,5 +7,11 @@ public class ExportPackage
     static void export()
     {
         AssetDatabase.ExportPackage(AssetDatabase.GetAllAssetPaths(), PlayerSettings.productName + ".unitypackage", ExportPackageOptions.Interactive | ExportPackageOptions.Recurse | ExportPackageOptions.IncludeDependencies | ExportPackageOptions.IncludeLibraryAssets);
+    }
+
+    [MenuItem("Assets/Full Export (No LibraryAssets)")]
+    static void exportnolib()
+    {
+        AssetDatabase.ExportPackage(AssetDatabase.GetAllAssetPaths(), PlayerSettings.productName + ".unitypackage", ExportPackageOptions.Interactive | ExportPackageOptions.Recurse | ExportPackageOptions.IncludeDependencies);
     }
 }

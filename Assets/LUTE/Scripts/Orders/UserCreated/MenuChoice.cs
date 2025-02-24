@@ -1,4 +1,3 @@
-using MoreMountains.Feedbacks;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,8 +26,7 @@ public class MenuChoice : Order
     [SerializeField] protected bool closeMenuOnSelect = true;
     [Tooltip("If true, this option will be passed to the Menu Dialogue but marked as a choice, this can be used to hide options while maintaining a Menu Shuffle.")] //to be implemented
     protected bool isPopupChoice = false;
-    [Tooltip("Feedback to play when the button is selected")]
-    [SerializeField] MMFeedbacks buttonFeedback;
+    [Tooltip("Sound to play when the button is selected")]
     [SerializeField] protected AudioClip buttonSound;
     [Tooltip("If true, the settings will be saved when this option is selected")]
     [SerializeField] protected bool saveSettings;
@@ -67,7 +65,7 @@ public class MenuChoice : Order
             {
                 menu.SetActive(true);
 
-                menu.AddOption(text, interactable, hideOption, targetNode, closeMenuOnSelect, buttonFeedback, false, null, false, -1, null, buttonSound, saveSettings);
+                menu.AddOption(text, interactable, hideOption, targetNode, closeMenuOnSelect, /*buttonFeedback,*/ false, null, false, -1, null, buttonSound, saveSettings);
             }
         }
         Continue();
@@ -77,7 +75,7 @@ public class MenuChoice : Order
     {
         if (popup != null)
         {
-            popup.AddOption(text, interactable, hideIfVisited, targetNode, closeMenuOnSelect, buttonFeedback, buttonSound, saveSettings);
+            popup.AddOption(text, interactable, hideIfVisited, targetNode, closeMenuOnSelect, /*buttonFeedback,*/ buttonSound, saveSettings);
         }
     }
 

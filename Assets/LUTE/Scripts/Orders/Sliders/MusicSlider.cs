@@ -1,3 +1,5 @@
+using LoGaCulture.LUTE;
+
 [OrderInfo("Menu", "Music Option Slider", "Displays a slider in a menu to adjust the music volume")]
 public class MusicSlider : OptionSlider
 {

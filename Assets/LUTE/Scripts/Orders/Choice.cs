@@ -1,4 +1,3 @@
-using MoreMountains.Feedbacks;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -32,8 +31,7 @@ public class Choice : Order
     [SerializeField] protected bool closeMenuOnSelect = true;
     [Tooltip("If true, this option will be passed to the Menu Dialogue but marked as a choice, this can be used to hide options while maintaining a Menu Shuffle.")] //to be implemented
     protected bool isPopupChoice = false;
-    [Tooltip("Feedback to play when the button is selected")]
-    [SerializeField] MMFeedbacks buttonFeedback;
+    [Tooltip("Sound to play when selecting this choice.")]
     [SerializeField] protected AudioClip buttonSound;
 
     public MenuDialogue SetMenuDialogue { get { return setMenuDialogue; } set { setMenuDialogue = value; } }
@@ -81,7 +79,7 @@ public class Choice : Order
 
                 string variedText = GetEngine().SubstituteVariables(text);
 
-                menu.AddOption(variedText, interactable, hideOption, targetNode, closeMenuOnSelect, buttonFeedback, justContinue, Continue, showNextChoice, OrderIndex, ParentNode, buttonSound);
+                menu.AddOption(variedText, interactable, hideOption, targetNode, closeMenuOnSelect, justContinue, Continue, showNextChoice, OrderIndex, ParentNode, buttonSound);
             }
 
             // could have a boolean of show next choice where we find next choice in order list and call it. then those choices would need to store an index of their position in the order list (order index) and we could just call the next one in the list
@@ -120,7 +118,7 @@ public class Choice : Order
         string variedText = GetEngine().SubstituteVariables(text);
         if (popup != null)
         {
-            popup.AddOption(variedText, interactable, hideIfVisited, targetNode, closeMenuOnSelect, buttonFeedback, buttonSound);
+            popup.AddOption(variedText, interactable, hideIfVisited, targetNode, closeMenuOnSelect, buttonSound);
         }
     }
 

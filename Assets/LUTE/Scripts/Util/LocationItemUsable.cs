@@ -1,4 +1,4 @@
-using MoreMountains.Feedbacks;
+using LoGaCulture.LUTE;
 using MoreMountains.InventoryEngine;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class LocationItemUsable : MonoBehaviour
 {
     [SerializeField] protected Image itemImage;
-    protected MMFeedbacks feedback;
+    protected AudioClip feedback;
     protected bool showCard;
-    protected LocationVariable location;
+    protected LocationData location;
     protected InventoryItem item;
     protected Sprite imageIcon;
 
@@ -43,7 +43,7 @@ public class LocationItemUsable : MonoBehaviour
         }
     }
 
-    public static LocationItemUsable CreateItem(LocationItemPickup customPrefab, InventoryItem item, MMFeedbacks feedbacks, bool card, LocationVariable location)
+    public static LocationItemUsable CreateItem(LocationItemPickup customPrefab, InventoryItem item, AudioClip useFeedback, bool card, LocationData location)
     {
         GameObject go = null;
         if (customPrefab != null)
@@ -57,7 +57,7 @@ public class LocationItemUsable : MonoBehaviour
         go.name = "UsableItem_" + item.ItemName;
 
         var itemContainer = go.GetComponent<LocationItemUsable>();
-        itemContainer.feedback = feedbacks;
+        itemContainer.feedback = useFeedback;
         itemContainer.showCard = card;
         itemContainer.location = location;
         itemContainer.item = item;
@@ -72,7 +72,10 @@ public class LocationItemUsable : MonoBehaviour
         if (item != null && !itemUsed)
         {
             itemUsed = true;
-            feedback?.PlayFeedbacks();
+            if (feedback)
+            {
+                LogaManager.Instance.SoundManager.PlaySound(feedback, 1.0f);
+            }
             item.Use(playerID); //should actually find the inventory properly or the player ID properly
         }
 
@@ -80,6 +83,6 @@ public class LocationItemUsable : MonoBehaviour
 
     private bool CheckLocation()
     {
-        return location.Evaluate(ComparisonOperator.Equals, null);
+        return location.locationRef.Evaluate(ComparisonOperator.Equals, null);
     }
 }

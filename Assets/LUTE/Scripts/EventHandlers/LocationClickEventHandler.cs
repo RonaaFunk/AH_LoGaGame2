@@ -21,6 +21,14 @@ namespace LoGaCulture.LUTE
         [SerializeField] protected bool triggerWhenAtLocation;
         [Tooltip("Whether to update the location marker when the node is completed.")]
         [SerializeField] protected bool updateLocationMarkerOnComplete;
+        [Tooltip("Default sprite of the location pin when unvisited.")]
+        [SerializeField] protected Sprite unvisitedSprite;
+        [Tooltip("Default sprite of the location pin when visited.")]
+        [SerializeField] protected Sprite visitedSprite;
+        [Tooltip("Default sprite of the location pin when the node has been completed and cannot be repeated.")]
+        [SerializeField] protected Sprite completedSprite;
+        [Tooltip("If true, override the default location marker sprites.")]
+        [SerializeField] protected bool overrideDefaultLocationSprites;
 
         public bool AutoTrigger
         {
@@ -51,6 +59,25 @@ namespace LoGaCulture.LUTE
         private void OnDisable()
         {
             LocationServiceSignals.OnLocationClicked -= OnLocationClicked;
+        }
+
+        private void Start()
+        {
+            if (overrideDefaultLocationSprites && location.Value != null)
+            {
+                if (unvisitedSprite)
+                {
+                    location.Value.Sprite = unvisitedSprite;
+                }
+                if (visitedSprite)
+                {
+                    location.Value.InProgressSprite = visitedSprite;
+                }
+                if (completedSprite)
+                {
+                    location.Value.CompletedSprite = completedSprite;
+                }
+            }
         }
 
         private void Update()

@@ -1,6 +1,6 @@
-using UnityEditor;
 using MoreMountains.InventoryEngine;
 using System.Linq;
+using UnityEditor;
 
 [CustomEditor(typeof(UsableItem))]
 
@@ -17,7 +17,7 @@ public class UsableItemEditor : OrderEditor
     public override void OnEnable()
     {
         base.OnEnable();
-        feedbackProp = serializedObject.FindProperty("useFeedback");
+        feedbackProp = serializedObject.FindProperty("useSound");
         showCardProp = serializedObject.FindProperty("showCard");
         locationProp = serializedObject.FindProperty("itemLocation");
         itemProp = serializedObject.FindProperty("item");
@@ -35,19 +35,7 @@ public class UsableItemEditor : OrderEditor
 
         EditorGUILayout.PropertyField(feedbackProp);
         EditorGUILayout.PropertyField(showCardProp);
-
-        var locationVars = engine.GetComponents<LocationVariable>();
-        for (int i = 0; i < locationVars.Length; i++)
-        {
-            if (locationVars[i] == locationProp.objectReferenceValue as LocationVariable)
-            {
-                locationVarIndex = i;
-            }
-        }
-
-        locationVarIndex = EditorGUILayout.Popup("Location", locationVarIndex, locationVars.Select(x => x.Key).ToArray());
-        if (locationVars.Length > 0)
-            locationProp.objectReferenceValue = locationVars[locationVarIndex];
+        EditorGUILayout.PropertyField(locationProp);
 
         var items = ContainerCardEditor.GetAllInstances<InventoryItem>();
         for (int j = 0; j < items.Length; j++)

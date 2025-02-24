@@ -1,7 +1,7 @@
-using UnityEngine;
-using UnityEditor;
 using MoreMountains.InventoryEngine;
 using System.Linq;
+using UnityEditor;
+using UnityEngine;
 
 [CustomEditor(typeof(Container))]
 public class ContainerCardEditor : OrderEditor
@@ -52,8 +52,8 @@ public class ContainerCardEditor : OrderEditor
         activableProp = serializedObject.FindProperty("activable");
         delayProp = serializedObject.FindProperty("delayBetweenUses");
         unlimitedUsesProp = serializedObject.FindProperty("unlimitedActivations");
-        activeFeedbackProp = serializedObject.FindProperty("activationFeedback");
-        inactiveFeedbackProp = serializedObject.FindProperty("deniedFeedback");
+        activeFeedbackProp = serializedObject.FindProperty("activationSound");
+        inactiveFeedbackProp = serializedObject.FindProperty("deniedSound");
         closeOnUseProp = serializedObject.FindProperty("closeOnUse");
         itemsProp = serializedObject.FindProperty("itemsToPickup");
         itemsQuantitiesProp = serializedObject.FindProperty("itemsQuantities");

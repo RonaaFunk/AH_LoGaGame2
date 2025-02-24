@@ -1,4 +1,3 @@
-using MoreMountains.Feedbacks;
 using TMPro;
 using UnityEngine;
 
@@ -18,7 +17,7 @@ namespace LoGaCulture.LUTE
         [SerializeField] protected CanvasGroup panelGroup; // For fading in and out
         [SerializeField] protected Transform objectSpawn;
         [SerializeField] protected bool hideDescription;
-        [SerializeField] protected MMFeedbacks unlockFeedback; // Typically played when player has unlocked all info
+        [SerializeField] protected AudioClip unlockSound; // Typically played when player has unlocked all info
 
         protected LTDescr fadeTween;
 
@@ -115,6 +114,7 @@ namespace LoGaCulture.LUTE
             //    if (info.VoiceOverClip != null)
             //        SetAudioInteraction(info.VoiceOverClip);
             //}
+
             if (playButton != null && playSprite != null && pauseSprite != null)
             {
                 if (info.VoiceOverClip != null)
@@ -289,7 +289,10 @@ namespace LoGaCulture.LUTE
 
         public virtual void UnlockInfo()
         {
-            unlockFeedback?.PlayFeedbacks();
+            if (unlockSound != null)
+            {
+                LogaManager.Instance.SoundManager.PlaySound(unlockSound, 1.0f);
+            }
         }
 
         public virtual void ToggleMenu()

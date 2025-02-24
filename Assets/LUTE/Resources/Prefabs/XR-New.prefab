@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ARInteractor: {fileID: 1227354936037840761}
-  m_ObjectSpawner: {fileID: 7861377888064534998}
+  m_ObjectSpawner: {fileID: 0}
   m_RequireHorizontalUpSurface: 0
   m_SpawnTriggerType: 0
   m_SpawnObjectInput:

@@ -1,4 +1,4 @@
-using MoreMountains.Feedbacks;
+using LoGaCulture.LUTE;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -60,7 +60,7 @@ public class Popup : MonoBehaviour
     // This method will automatically instantiate one if none exists
     protected virtual void CheckEventSystem()
     {
-        EventSystem eventSystem = GameObject.FindObjectOfType<EventSystem>();
+        EventSystem eventSystem = GameObject.FindFirstObjectByType<EventSystem>();
         if (eventSystem == null)
         {
             // Auto spawn an Event System from the prefab - ensure you have one in a Resources folder
@@ -89,7 +89,7 @@ public class Popup : MonoBehaviour
     {
         if (ActivePopupWindow == null)
         {
-            var pw = GameObject.FindObjectOfType<Popup>();
+            var pw = GameObject.FindFirstObjectByType<Popup>();
             if (pw != null)
             {
                 ActivePopupWindow = pw;
@@ -168,7 +168,7 @@ public class Popup : MonoBehaviour
     /// Adds the option to the list of displayed options. Calls a Node when selected
     /// Will cause the Menu to become visible if it is not already visible
     /// <returns><c>true</c>, if the option was added successfully.</returns>
-    public virtual bool AddOption(string text, bool interactable, bool hideOption, Node targetNode, bool closeMenuOnSelect, MMFeedbacks feedback = null, AudioClip buttonSound = null, bool saveSettings = false)
+    public virtual bool AddOption(string text, bool interactable, bool hideOption, Node targetNode, bool closeMenuOnSelect, AudioClip buttonSound = null, bool saveSettings = false)
     {
         var node = targetNode;
         UnityEngine.Events.UnityAction action = delegate
@@ -192,7 +192,6 @@ public class Popup : MonoBehaviour
             {
                 LogaManager.Instance.SoundManager.PlaySound(buttonSound, -1);
             }
-            feedback?.PlayFeedbacks();
 
             if (saveSettings)
             {

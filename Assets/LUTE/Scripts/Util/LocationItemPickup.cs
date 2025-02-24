@@ -1,4 +1,4 @@
-using MoreMountains.Feedbacks;
+using LoGaCulture.LUTE;
 using MoreMountains.InventoryEngine;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class LocationItemPickup : MonoBehaviour
 {
     [SerializeField] protected Image itemImage;
-    protected MMFeedbacks feedback;
+    protected AudioClip feedback;
     protected bool showPrompt;
     protected bool showCard;
     protected LocationVariable location;
@@ -63,7 +63,7 @@ public class LocationItemPickup : MonoBehaviour
         }
     }
 
-    public static LocationItemPickup CreateItem(LocationItemPickup customPrefab, InventoryItem item, int quantity, MMFeedbacks feedbacks, bool prompt, bool card, LocationVariable location, Node parentNode = null)
+    public static LocationItemPickup CreateItem(LocationItemPickup customPrefab, InventoryItem item, int quantity, AudioClip pickupSound, bool prompt, bool card, LocationVariable location, Node parentNode = null)
     {
         GameObject go = null;
         if (customPrefab != null)
@@ -77,7 +77,7 @@ public class LocationItemPickup : MonoBehaviour
         go.name = "ContainerItem_" + item.ItemName;
 
         var itemContainer = go.GetComponent<LocationItemPickup>();
-        itemContainer.feedback = feedbacks;
+        itemContainer.feedback = pickupSound;
         itemContainer.showPrompt = prompt;
         itemContainer.showCard = card;
         itemContainer.location = location;
@@ -101,7 +101,10 @@ public class LocationItemPickup : MonoBehaviour
         if (item != null && !itemPickedUp)
         {
             itemPickedUp = true;
-            feedback?.PlayFeedbacks();
+            if (feedback)
+            {
+                LogaManager.Instance.SoundManager.PlaySound(feedback, 1.0f);
+            }
             item.Pick();
         }
 

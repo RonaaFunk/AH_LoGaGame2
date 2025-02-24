@@ -1,4 +1,4 @@
-using MoreMountains.Feedbacks;
+using LoGaCulture.LUTE;
 using MoreMountains.InventoryEngine;
 using MoreMountains.Tools;
 using UnityEngine;
@@ -13,8 +13,8 @@ public class AddItem : Order
     [SerializeField] protected InventoryItem item;
     [Tooltip("The amount of the item to add to the inventory")]
     [SerializeField] protected int amount = 1;
-    [Tooltip("Optional Feedback to play when giving the item")]
-    [SerializeField] protected MMFeedbacks feedback;
+    [Tooltip("Optional Sound to play when giving the item")]
+    [SerializeField] protected AudioClip giveSound;
     [Tooltip("If this item should persist across scenes and sytem or should be used in this instance")]
     [SerializeField] protected bool persistentItem = false;
     [Tooltip("If the item is already in the inventory, should we add to it or ignore it?")]
@@ -52,7 +52,10 @@ public class AddItem : Order
 
     private void Add()
     {
-        feedback?.PlayFeedbacks();
+        if (giveSound)
+        {
+            LogaManager.Instance.SoundManager.PlaySound(giveSound, 1.0f);
+        }
         itemPicker.Pick();
         if (persistentItem)
             MMGameEvent.Trigger("Save");

@@ -1,15 +1,14 @@
-using MoreMountains.Feedbacks;
 using MoreMountains.InventoryEngine;
 using UnityEngine;
 
 [OrderInfo("Items",
-              "LocationPickups",
+              "Location Pickups",
               "Creates a pickup item on the map and will either show this as a card with button or auto pickup")]
 [AddComponentMenu("")]
 public class LocationPickups : Order
 {
-    [Tooltip("The feedback to play when the item gets picked up")]
-    [SerializeField] protected MMFeedbacks pickupFeedback;
+    [Tooltip("The sound to play when the item gets picked up")]
+    [SerializeField] protected AudioClip pickupSound;
     [Tooltip("Whether or not to show the quantity prompt")]
     [SerializeField] protected bool showPrompt = true;
     [Tooltip("Whether or not to show the item pickup card (if false the item wil be picked up automatically)")]
@@ -22,14 +21,14 @@ public class LocationPickups : Order
     [SerializeField] protected int itemsQuantitiy;
     public override void OnEnter()
     {
-        LocationItemPickup.CreateItem(null, item, itemsQuantitiy, pickupFeedback, showPrompt, showPickupCard, itemLocation.locationRef, ParentNode);
+        LocationItemPickup.CreateItem(null, item, itemsQuantitiy, pickupSound, showPrompt, showPickupCard, itemLocation.locationRef, ParentNode);
         Continue();
     }
 
     public override string GetSummary()
     {
         string cardText = showPickupCard ? "display a pickup card" : "pickup " + itemsQuantitiy + " automatically";
-        return "Create a " + item.ItemName + " pickup that will " + cardText;
+        return "Create a " + item?.ItemName + " pickup that will " + cardText;
     }
 
 }

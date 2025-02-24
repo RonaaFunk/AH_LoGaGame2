@@ -15,7 +15,7 @@ public class ItemContainerEditor : OrderEditor
     public override void OnEnable()
     {
         base.OnEnable();
-        feedbackProp = serializedObject.FindProperty("pickupFeedback");
+        feedbackProp = serializedObject.FindProperty("pickupSound");
         showPromptProp = serializedObject.FindProperty("showPrompt");
         showCardProp = serializedObject.FindProperty("showPickupCard");
         itemLocProp = serializedObject.FindProperty("itemLocation");
@@ -37,32 +37,7 @@ public class ItemContainerEditor : OrderEditor
         EditorGUILayout.PropertyField(showPromptProp);
         EditorGUILayout.PropertyField(showCardProp);
         EditorGUILayout.PropertyField(itemLocProp);
-
-        //var locationVars = engine.GetComponents<LocationVariable>();
-        //for (int i = 0; i < locationVars.Length; i++)
-        //{
-        //    if (locationVars[i] == itemLocProp.objectReferenceValue as LocationVariable)
-        //    {
-        //        locationVarIndex = i;
-        //    }
-        //}
-
-        //locationVarIndex = EditorGUILayout.Popup("Location", locationVarIndex, locationVars.Select(x => x.Key).ToArray());
-        //if (locationVars.Length > 0)
-        //    itemLocProp.objectReferenceValue = locationVars[locationVarIndex];
-
-        //var items = ContainerCardEditor.GetAllInstances<InventoryItem>();
-        //for (int j = 0; j < items.Length; j++)
-        //{
-        //    if (items[j] == itemProp.objectReferenceValue as InventoryItem)
-        //    {
-        //        itemIndex = j;
-        //    }
-        //}
-
-        //Create a drop down list based on the items in the project
-        //itemIndex = EditorGUILayout.Popup("Item to Add", itemIndex, items.Select(x => x.name).ToArray());
-        //itemProp.objectReferenceValue = items[itemIndex];
+        EditorGUILayout.PropertyField(itemProp);
 
         EditorGUILayout.PropertyField(itemQuantProp);
 

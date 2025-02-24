@@ -1,6 +1,4 @@
-using Mapbox.Map;
-using MoreMountains.Feedbacks;
-using System.Collections;
+using LoGaCulture.LUTE;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -9,7 +7,7 @@ public class DiceRollerCard : MonoBehaviour
 {
     [SerializeField] protected Animator animator;
     [SerializeField] protected TMP_InputField modifierField;
-    [SerializeField] protected MMFeedbacks rollFeedback;
+    [SerializeField] protected AudioClip rollSound;
 
     protected bool closeOnUse = true;
     protected bool continueOnUse = false;
@@ -89,7 +87,7 @@ public class DiceRollerCard : MonoBehaviour
     public void RollDice()
     {
         var continueOnAnim = GetComponent<ContinueOnAnimEnd>();
-        if(continueOnAnim != null)
+        if (continueOnAnim != null)
         {
             continueOnAnim.SetEvent(action);
         }
@@ -108,14 +106,19 @@ public class DiceRollerCard : MonoBehaviour
         {
             roll = diceVariable.RollDice();
         }
-        rollFeedback?.PlayFeedbacks();
+
+        if (rollSound)
+        {
+            LogaManager.Instance.SoundManager.PlaySound(rollSound, 1.0f);
+        }
+
         animator.SetTrigger("Roll");
         animator.SetInteger("RollValue", roll);
     }
 
     public void CloseCard()
     {
-        if(closeOnUse)
+        if (closeOnUse)
         { }
     }
 }

@@ -1,7 +1,7 @@
+using LoGaCulture.LUTE;
+using MoreMountains.InventoryEngine;
 using System;
 using System.Collections.Generic;
-using MoreMountains.Feedbacks;
-using MoreMountains.InventoryEngine;
 using UnityEngine;
 
 
@@ -23,11 +23,11 @@ public class ContainerItem : InventoryItem
     [SerializeField] protected bool unlimitedActivations = true;
     [Tooltip("Whether to show a prompt when the player is opening the container")]
     [SerializeField] protected bool showPrompt = true;
-    [Header("Key Feedbacks")]
+    [Header("Key Sounds")]
     [Tooltip("Feedback to play when the zone gets activated")]
-    [SerializeField] protected MMFeedbacks activationFeedback;
+    [SerializeField] protected AudioClip activationSound;
     [Tooltip("Feedback to play when the zone tries to get activated but can't")]
-    [SerializeField] protected MMFeedbacks deniedFeedback;
+    [SerializeField] protected AudioClip deniedSound;
     [Tooltip("Sprite to show when the container has been opened")]
     [SerializeField] protected Sprite openSprite;
     [SerializeField] protected InventoryItem[] items;
@@ -103,7 +103,10 @@ public class ContainerItem : InventoryItem
 
         //If we have to this stage then the key has been found and used
         //We can now trigger the key action
-        activationFeedback?.PlayFeedbacks();
+        if (activationSound)
+        {
+            LogaManager.Instance.SoundManager.PlaySound(activationSound, 1.0f);
+        }
         Icon = openSprite;
         TriggerKeyAction();
         isOpen = true;
@@ -119,8 +122,10 @@ public class ContainerItem : InventoryItem
 
     public virtual void PromptError()
     {
-        Debug.Log("nope");
-        deniedFeedback?.PlayFeedbacks();
+        if (deniedSound)
+        {
+            LogaManager.Instance.SoundManager.PlaySound(deniedSound, 1.0f);
+        }
         if (showPrompt)
         {
             //do stuff to show an error
@@ -129,8 +134,10 @@ public class ContainerItem : InventoryItem
 
     public virtual void PromptOpenError()
     {
-        Debug.Log("already open");
-        deniedFeedback?.PlayFeedbacks();
+        if (deniedSound)
+        {
+            LogaManager.Instance.SoundManager.PlaySound(deniedSound, 1.0f);
+        }
         if (showPrompt)
         {
             //do stuff to show an error

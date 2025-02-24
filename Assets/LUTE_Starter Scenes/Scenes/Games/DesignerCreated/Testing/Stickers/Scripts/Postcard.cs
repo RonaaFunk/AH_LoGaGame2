@@ -1,6 +1,3 @@
-using LoGaCulture.LUTE;
-using MoreMountains.Feedbacks;
-using MoreMountains.Tools;
 using System;
 using System.Collections.Generic;
 using TMPro;
@@ -30,21 +27,21 @@ public class Postcard : MonoBehaviour
     [SerializeField] protected TMP_InputField creatorText;
     [SerializeField] protected Animator anim;
     [SerializeField] protected RectTransform binIcon;
-    [Header("Feedbacks")]
-    [Tooltip("Feedback to be played upon sticker being deleted")]
-    [SerializeField] protected MMFeedbacks deleteStickerFeedback;
-    [Tooltip("Feedback to be played when loading postcard")]
-    [SerializeField] protected MMFeedbacks loadPostcardFeedback;
-    [Tooltip("Feedback to be played when discarding postcard")]
-    [SerializeField] protected MMFeedbacks discardFeedback;
-    [Tooltip("Feedback to be played when submitting postcard")]
-    [SerializeField] protected MMFeedbacks submitPostcardFeedback;
-    [Tooltip("Feedback to be played when flipping postcard")]
-    [SerializeField] protected MMFeedbacks flipPostcardFeedback;
-    [Tooltip("Feedback to be played when hovering over bin")]
-    [SerializeField] protected MMFeedbacks binHoverFeedback;
-    [Tooltip("Feedback to be played when achievement has been unlocked on this postcard")]
-    [SerializeField] protected MMFeedbacks achievementUnlockedFeedback;
+    //[Header("Feedbacks")]
+    //[Tooltip("Feedback to be played upon sticker being deleted")]
+    //[SerializeField] protected MMFeedbacks deleteStickerFeedback;
+    //[Tooltip("Feedback to be played when loading postcard")]
+    //[SerializeField] protected MMFeedbacks loadPostcardFeedback;
+    //[Tooltip("Feedback to be played when discarding postcard")]
+    //[SerializeField] protected MMFeedbacks discardFeedback;
+    //[Tooltip("Feedback to be played when submitting postcard")]
+    //[SerializeField] protected MMFeedbacks submitPostcardFeedback;
+    //[Tooltip("Feedback to be played when flipping postcard")]
+    //[SerializeField] protected MMFeedbacks flipPostcardFeedback;
+    //[Tooltip("Feedback to be played when hovering over bin")]
+    //[SerializeField] protected MMFeedbacks binHoverFeedback;
+    //[Tooltip("Feedback to be played when achievement has been unlocked on this postcard")]
+    //[SerializeField] protected MMFeedbacks achievementUnlockedFeedback;
 
     protected List<PostcardVar.StickerVar> stickerVars = new List<PostcardVar.StickerVar>();
     // The stickers that are on this postcard
@@ -60,10 +57,10 @@ public class Postcard : MonoBehaviour
     public static List<Postcard> activePostcards = new List<Postcard>();
 
     public string PostcardName { get { return postcardName; } set { postcardName = value; } }
-    public string PostcardDesc { get { return postcardDescription; } set { postcardDescription = value; }  }
+    public string PostcardDesc { get { return postcardDescription; } set { postcardDescription = value; } }
     public string PostcardCreator { get { return postcardCreator; } set { postcardCreator = value; } }
     public int TotalStickers { get { return totalStickers; } set { totalStickers = value; } }
-    public List<Sticker> PostcardStickers { get { return stickers;  } set { stickers = value; } }
+    public List<Sticker> PostcardStickers { get { return stickers; } set { stickers = value; } }
     public List<PostcardVar.StickerVar> StickerVars { get { return stickerVars; } set { stickerVars = value; } }
 
     private StickerManager manager;
@@ -77,7 +74,7 @@ public class Postcard : MonoBehaviour
         return 0;
     }
 
-    public Postcard SavePostcard (Postcard newPostcard, Postcard savedPostcard)
+    public Postcard SavePostcard(Postcard newPostcard, Postcard savedPostcard)
     {
         if (newPostcard == null)
             return null;
@@ -139,7 +136,7 @@ public class Postcard : MonoBehaviour
                 if (postCardPrefab != null)
                 {
                     var postcardGO = Instantiate(postCardPrefab).GetComponent<Postcard>();
-                    if(checkName)
+                    if (checkName)
                         name = postcardGO.GetUniquePostcardName(name);
                     postcardGO.name = name;
                     postcardGO.postcardName = name;
@@ -152,9 +149,9 @@ public class Postcard : MonoBehaviour
                 }
             }
         }
-        if(ActivePostcard.isDiscarded)
+        if (ActivePostcard.isDiscarded)
         {
-            if(checkName)
+            if (checkName)
                 name = ActivePostcard.GetUniquePostcardName(name);
             ActivePostcard.SetPostcardBase(name, description, creator);
             ActivePostcard.SetPostcardText(name, description, creator);
@@ -212,7 +209,7 @@ public class Postcard : MonoBehaviour
         //}
         //if(ActivePostcard)
         //    ActivePostcard.Discard(null);
-        
+
         Postcard activePostcard = GetPostcard(postcard.postcardName, postcard.postcardDescription, null, postcard.postcardCreator, checkName);
 
         if (activePostcard == null)
@@ -225,14 +222,14 @@ public class Postcard : MonoBehaviour
         }
 
         activePostcard.SetActive(true);
-        activePostcard.loadPostcardFeedback?.PlayFeedbacks();
+        //activePostcard.loadPostcardFeedback?.PlayFeedbacks();
 
         return activePostcard;
     }
 
     public void SetPostcardBase(string name, string desc, string creator)
     {
-        if(ActivePostcard != null)
+        if (ActivePostcard != null)
         {
             ActivePostcard.name = name;
             ActivePostcard.postcardName = name;
@@ -245,7 +242,7 @@ public class Postcard : MonoBehaviour
 
     public void SetPostcardText(string name, string desc, string creator)
     {
-        if(nameText != null)
+        if (nameText != null)
         {
             nameText.text = name;
         }
@@ -266,7 +263,7 @@ public class Postcard : MonoBehaviour
 
     public Sticker AddSticker(StickerItem sticker)
     {
-        if(sticker == null)
+        if (sticker == null)
             return null;
         if (stickerCanvas == null)
             return null;
@@ -281,7 +278,7 @@ public class Postcard : MonoBehaviour
         var stickerInstance = Instantiate(stickerPrefab, stickerCanvas).GetComponent<Sticker>();
         // Use sticker class to set image and name etc of the sticker (i.e., initialise the sticker)
         stickerInstance.Initialise(sticker);
-        if(binIcon != null)
+        if (binIcon != null)
             stickerInstance.SetBinIcon(binIcon);
         stickerInstance.SetPostcard(this);
 
@@ -343,32 +340,32 @@ public class Postcard : MonoBehaviour
         stickers.Remove(sticker);
         Destroy(sticker.gameObject);
         // Play feedback
-        deleteStickerFeedback?.PlayFeedbacks();
+        //deleteStickerFeedback?.PlayFeedbacks();
         return sticker;
     }
 
     public void SubmitDesign()
     {
         manager.SubmitDesign(ActivePostcard);
-        PostcardAchievementList list = MMAchievementManager.currentList as PostcardAchievementList;
-        if (list != null)
-        {
-            if(list.CheckPostcardAchievement(this))
-            {
-                achievementUnlockedFeedback?.PlayFeedbacks();
-            }
-            else
-                submitPostcardFeedback?.PlayFeedbacks();
-        }
-        else
-            submitPostcardFeedback?.PlayFeedbacks();
+        //PostcardAchievementList list = MMAchievementManager.currentList as PostcardAchievementList;
+        //if (list != null)
+        //{
+        //    if(list.CheckPostcardAchievement(this))
+        //    {
+        //        achievementUnlockedFeedback?.PlayFeedbacks();
+        //    }
+        //    else
+        //        submitPostcardFeedback?.PlayFeedbacks();
+        //}
+        //else
+        //    submitPostcardFeedback?.PlayFeedbacks();
         Discard(false);
     }
 
     public void Discard(bool playFedback = true)
     {
         isDiscarded = true;
-        foreach(var sticker in stickers)
+        foreach (var sticker in stickers)
         {
             Destroy(sticker.gameObject);
         }
@@ -376,26 +373,26 @@ public class Postcard : MonoBehaviour
         postcardName = "";
         postcardDescription = "";
 
-        if(isFlipped)
+        if (isFlipped)
         {
             FlipPostcard();
             stickerCanvas.transform.Rotate(0, -180, 0);
         }
 
-        if(playFedback)
-                discardFeedback?.PlayFeedbacks();
+        //if(playFedback)
+        //        discardFeedback?.PlayFeedbacks();
         ActivePostcard?.SetActive(false);
     }
 
     public void FlipPostcard()
     {
-        if(nameText == null || descriptionText == null || creatorText == null)
+        if (nameText == null || descriptionText == null || creatorText == null)
         {
             return;
         }
 
         var descriptorGroup = nameText.transform.parent.GetComponent<CanvasGroup>();
-        if(descriptorGroup == null)
+        if (descriptorGroup == null)
         {
             return;
         }
@@ -433,7 +430,7 @@ public class Postcard : MonoBehaviour
             isFlipped = false;
         }
 
-        flipPostcardFeedback?.PlayFeedbacks();
+        //flipPostcardFeedback?.PlayFeedbacks();
     }
 
     public void UpdatePostcardName(string name)
@@ -448,16 +445,16 @@ public class Postcard : MonoBehaviour
     }
     public void UpdatePostcardCreator(string creator)
     {
-        if(ActivePostcard)
+        if (ActivePostcard)
             ActivePostcard.PostcardCreator = creator;
     }
 
     public void PlayBinFeedback()
     {
-        binHoverFeedback?.PlayFeedbacks();
+        //binHoverFeedback?.PlayFeedbacks();
     }
     public void StopBinFeedback()
     {
-        binHoverFeedback?.StopFeedbacks();
+        //binHoverFeedback?.StopFeedbacks();
     }
 }

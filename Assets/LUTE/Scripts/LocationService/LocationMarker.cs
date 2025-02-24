@@ -1,4 +1,3 @@
-using MoreMountains.Feedbacks;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -21,8 +20,6 @@ namespace LoGaCulture.LUTE
         [SerializeField] protected SpriteRenderer radiusSpriteRenderer;
         [Tooltip("The text mesh that will be used to render the marker label")]
         [SerializeField] protected TextMesh textMesh;
-        [Tooltip("The feedback to play when the location is completed.")]
-        [SerializeField] protected MMFeedbacks completeFeedback;
 
         public TextMesh TextMesh { get => textMesh; set => textMesh = value; }
         public SpriteRenderer RadiusRenderer { get => radiusSpriteRenderer; set => radiusSpriteRenderer = value; }
@@ -123,21 +120,21 @@ namespace LoGaCulture.LUTE
                 }
             }
 
-            switch (locationInfo._LocationStatus)
-            {
-                case LUTELocationInfo.LocationStatus.Unvisited:
-                    SetMarkerSprite(locationInfo.Sprite);
-                    SetRadiusColour(locationInfo.defaultRadiusColour);
-                    break;
-                case LUTELocationInfo.LocationStatus.Visited:
-                    SetMarkerSprite(locationInfo.InProgressSprite);
-                    SetRadiusColour(locationInfo.visitedRadiusColour);
-                    break;
-                case LUTELocationInfo.LocationStatus.Completed:
-                    SetMarkerSprite(locationInfo.CompletedSprite);
-                    SetRadiusColour(locationInfo.completedRadiusColour);
-                    break;
-            }
+            //switch (locationInfo._LocationStatus)
+            //{
+            //    case LUTELocationInfo.LocationStatus.Unvisited:
+            //        SetMarkerSprite(locationInfo.Sprite);
+            //        SetRadiusColour(locationInfo.defaultRadiusColour);
+            //        break;
+            //    case LUTELocationInfo.LocationStatus.Visited:
+            //        SetMarkerSprite(locationInfo.InProgressSprite);
+            //        SetRadiusColour(locationInfo.visitedRadiusColour);
+            //        break;
+            //    case LUTELocationInfo.LocationStatus.Completed:
+            //        SetMarkerSprite(locationInfo.CompletedSprite);
+            //        SetRadiusColour(locationInfo.completedRadiusColour);
+            //        break;
+            //}
         }
 
         private void OnLocationComplete(LocationVariable location)
@@ -151,7 +148,7 @@ namespace LoGaCulture.LUTE
                 {
                     locationInfo._LocationStatus = LUTELocationInfo.LocationStatus.Visited;
                 }
-                // Everytime we visit a location we should save the info
+                // Everytime we visit a location we should save the state of the location
                 if (locationInfo.SaveInfo)
                 {
                     var locVar = engine.GetComponents<LocationVariable>().FirstOrDefault(x => x.Value.infoID == locationInfo.infoID);
@@ -176,7 +173,6 @@ namespace LoGaCulture.LUTE
 
             if (locationInfo.NodeComplete == node._NodeName)
             {
-                completeFeedback?.PlayFeedbacks();
                 locationInfo._LocationStatus = LUTELocationInfo.LocationStatus.Completed;
             }
         }

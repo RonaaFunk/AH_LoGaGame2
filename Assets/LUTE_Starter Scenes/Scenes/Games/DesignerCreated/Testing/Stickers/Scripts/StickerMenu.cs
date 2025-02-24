@@ -1,4 +1,3 @@
-using MoreMountains.Feedbacks;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -8,10 +7,10 @@ public class StickerMenu : MonoBehaviour
 {
     [SerializeField] protected GameObject postcardButton;
     [SerializeField] protected Transform buttonLayout;
-    [Tooltip("Feedback to be played when closing this menu")]
-    [SerializeField] protected MMFeedbacks closeFeedback;
-    [Tooltip("Feedback to be played when opening this menu")]
-    [SerializeField] protected MMFeedbacks openFeedback;
+    //[Tooltip("Feedback to be played when closing this menu")]
+    //[SerializeField] protected MMFeedbacks closeFeedback;
+    //[Tooltip("Feedback to be played when opening this menu")]
+    //[SerializeField] protected MMFeedbacks openFeedback;
 
     private StickerManager stickerManager;
     private List<GameObject> spawnedButtons = new List<GameObject>();
@@ -102,7 +101,7 @@ public class StickerMenu : MonoBehaviour
                 spawnedButtons.Add(newButton);
             }
 
-            openFeedback?.PlayFeedbacks();
+            //openFeedback?.PlayFeedbacks();
             canvasGroup.alpha = 1.0f;
             canvas.enabled = true;
 
@@ -110,7 +109,7 @@ public class StickerMenu : MonoBehaviour
         else
         {
             ClearMenu(canvasGroup, canvas);
-            closeFeedback?.PlayFeedbacks();
+            //closeFeedback?.PlayFeedbacks();
         }
     }
 

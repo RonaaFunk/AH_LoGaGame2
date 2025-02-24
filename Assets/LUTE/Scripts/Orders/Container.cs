@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using MoreMountains.Feedbacks;
 using MoreMountains.InventoryEngine;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -28,11 +26,11 @@ public class Container : Order
     [SerializeField] protected bool unlimitedActivations = true;
     [Tooltip("Close the card once opened")]
     [SerializeField] protected bool closeOnUse = true;
-    [Header("Feedbacks")]
-    [Tooltip("Feedback to play when the zone gets activated")]
-    [SerializeField] protected MMFeedbacks activationFeedback;
-    [Tooltip("Feedback to play when the zone tries to get activated but can't")]
-    [SerializeField] protected MMFeedbacks deniedFeedback;
+    [Header("Audio")]
+    [Tooltip("Sound to play when the zone gets activated")]
+    [SerializeField] protected AudioClip activationSound;
+    [Tooltip("Sound to play when the zone tries to get activated but can't")]
+    [SerializeField] protected AudioClip deniedSound;
     [Header("Prompts")]
     [Tooltip("Whether to show a prompt when the player is opening the container")]
     [SerializeField] protected bool showPrompt = true;
@@ -62,7 +60,7 @@ public class Container : Order
 
     public override void OnEnter()
     {
-        ContainerCard.CreateNewCard(requiresKey, keyID, keyAction, activable, delayBetweenUses, unlimitedActivations, closeOnUse, activationFeedback, deniedFeedback, itemsToPickup, itemsQuantities, promptInfoError, promptFadeDuration, promptColor, hideIfPlayerNotNearby, spawnLocation, GetEngine(), setContainerCard, openAnim, closeAnim, promptInfoOpened, showPrompt);
+        ContainerCard.CreateNewCard(requiresKey, keyID, keyAction, activable, delayBetweenUses, unlimitedActivations, closeOnUse, activationSound, deniedSound, itemsToPickup, itemsQuantities, promptInfoError, promptFadeDuration, promptColor, hideIfPlayerNotNearby, spawnLocation, GetEngine(), setContainerCard, openAnim, closeAnim, promptInfoOpened, showPrompt);
         Continue();
     }
 

@@ -903,7 +903,6 @@ GameObject:
   - component: {fileID: 543519214}
   - component: {fileID: 543519215}
   - component: {fileID: 543519216}
-  - component: {fileID: 543519217}
   - component: {fileID: 543519218}
   - component: {fileID: 543519219}
   - component: {fileID: 543519220}
@@ -913,6 +912,9 @@ GameObject:
   - component: {fileID: 543519225}
   - component: {fileID: 543519224}
   - component: {fileID: 543519226}
+  - component: {fileID: 543519229}
+  - component: {fileID: 543519228}
+  - component: {fileID: 543519227}
   m_Layer: 0
   m_Name: BasicFlowEngine
   m_TagString: Untagged
@@ -974,8 +976,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 465
-    y: 165
+    x: 667
+    y: 83
     width: 176.58
     height: 40
   nodeName: XR Location Spawning
@@ -1487,9 +1489,9 @@ MonoBehaviour:
   itemId: 0
   orderList:
   - {fileID: 543519216}
-  - {fileID: 543519217}
-  - {fileID: 543519218}
   - {fileID: 543519226}
+  - {fileID: 543519218}
+  - {fileID: 543519227}
   eventHandler: {fileID: 543519221}
   isGrouped: 0
   groupIndex: -1
@@ -1525,20 +1527,6 @@ MonoBehaviour:
   buttonSound: {fileID: 0}
   popupWindow: {fileID: 0}
   allowRedraw: 0
---- !u!114 &543519217
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 543519182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f99f6d968d6a0b4d9077bbe7cc219d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: Menu
-  hideThisOption: 0
 --- !u!114 &543519218
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1551,9 +1539,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c5ebc1795c0734ea5c2c8cab643c7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Level Select
+  text: Restart Scene
   description: 
-  targetNode: {fileID: 543519219}
+  targetNode: {fileID: 543519229}
   hideIfVisited: 0
   interactable: 1
   setMenuDialogue: {fileID: 0}
@@ -1611,8 +1599,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 694a2949041e0b34c90245eb4017ed7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: LevelSelect
-  sceneIndex: 0
+  sceneName:
+    stringRef: {fileID: 0}
+    stringVal: LevelSelect
+  loadingImage: {fileID: 0}
 --- !u!114 &543519221
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1696,8 +1686,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1236
-    y: 161
+    x: 709
+    y: 239
     width: 80.63
     height: 40
   nodeName: Node
@@ -1741,6 +1731,79 @@ MonoBehaviour:
   buttonFeedback: {fileID: 0}
   buttonSound: {fileID: 0}
   saveSettings: 0
+--- !u!114 &543519227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543519182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33c5ebc1795c0734ea5c2c8cab643c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Level Select
+  description: 
+  targetNode: {fileID: 543519219}
+  hideIfVisited: 0
+  interactable: 1
+  setMenuDialogue: {fileID: 0}
+  hideThisOption: 0
+  closeMenuOnSelect: 1
+  buttonFeedback: {fileID: 0}
+  buttonSound: {fileID: 0}
+  saveSettings: 0
+--- !u!114 &543519228
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543519182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cc30f427d38a5b49a8422cf35c3db9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingImage: {fileID: 0}
+--- !u!114 &543519229
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543519182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc9f689a21732a34489f55c1ed82a919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 1070.185
+    y: 178
+    width: 129.63
+    height: 40
+  nodeName: Restart Scene
+  nodeDescription: Basic building block of a narrative engine
+  groupDescription: A series of nodes that can be executed as a group
+  itemId: 0
+  orderList:
+  - {fileID: 543519228}
+  eventHandler: {fileID: 0}
+  isGrouped: 0
+  groupIndex: -1
+  repeatable: 0
+  nodeLocation: {fileID: 0}
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  hoverStartTime: 0
+  targetUnlockNode: {fileID: 0}
+  targetKeyNode: {fileID: 0}
+  showDesc: 0
+  saveable: 0
+  NodeComplete: 0
 --- !u!1 &680917997
 GameObject:
   m_ObjectHideFlags: 0
