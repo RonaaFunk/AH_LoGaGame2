@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d1ee5059853cae488748d84c3d832d9, type: 3}
+  m_Name: BogsExampleAchievementsList
+  m_EditorClassIdentifier: 
+  achievementsListID: BogAchievementsList
+  achievements:
+  - {fileID: 11400000, guid: 5cb5a6486aa04344a8d023be907a51cc, type: 2}
+  - {fileID: 11400000, guid: f82340b786b5df842b0026e4fe39b7ce, type: 2}

@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Resources/HalfWayDownMethuen.asset.meta
+guid: dfa9a0340c3b5e841bd3f70cf5810d56
+========
+guid: 47347e5d120ed5246b7ff689840ef552
+>>>>>>>> upstream/main:Assets/LUTE/Resources/Achievements/LUTEExampleAchievement.asset.meta
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

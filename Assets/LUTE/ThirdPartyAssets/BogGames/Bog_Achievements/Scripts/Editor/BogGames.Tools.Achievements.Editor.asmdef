@@ -1,0 +1,19 @@
+{
+    "name": "BogGames.Tools.Achievements.Editor",
+    "rootNamespace": "BogGames.Tools.Achievements",
+    "references": [
+        "GUID:69eb4628c0b47c947a55705d22c8414d",
+        "GUID:41d188f165b2df749a2fdd0dfc393d94"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
