@@ -25,7 +25,7 @@ MonoBehaviour:
   visitedRadiusColour: {r: 188, g: 120, b: 61, a: 150}
   completedRadiusColour: {r: 188, g: 120, b: 61, a: 150}
   locationDisabled: 0
-  radiusIncrease: 0
+  radiusIncrease: 0.1
   interactable: 1
   saveInfo: 1
   indepedentMarkerUpdating: 0
@@ -34,5 +34,5 @@ MonoBehaviour:
   infoImage: {fileID: 0}
   displayName: 
   description: 
-  nodeComplete: 
+  nodeComplete: Shop Node
   executeNode: 

@@ -94,9 +94,8 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-<<<<<<<< HEAD:Assets/LUTE/ThirdPartyAssets/Feel/FeelDemosURP/Strike/StrikeURP/FeelStrikeLightmap-2_comp_light.exr.meta
-    buildTarget: iOS
-    maxTextureSize: 8192
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -108,52 +107,16 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-========
->>>>>>>> upstream/main:Assets/LUTE_Starter Scenes/Sprites/UI/GamePreviews/hillCover.jpg.meta
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-<<<<<<<< HEAD:Assets/LUTE/ThirdPartyAssets/Feel/FeelDemosURP/Strike/StrikeURP/FeelStrikeLightmap-2_comp_light.exr.meta
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 8192
-========
-    buildTarget: Server
-    maxTextureSize: 2048
->>>>>>>> upstream/main:Assets/LUTE_Starter Scenes/Sprites/UI/GamePreviews/hillCover.jpg.meta
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-<<<<<<<< HEAD:Assets/LUTE/ThirdPartyAssets/Feel/FeelDemosURP/Strike/StrikeURP/FeelStrikeLightmap-2_comp_light.exr.meta
-========
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
->>>>>>>> upstream/main:Assets/LUTE_Starter Scenes/Sprites/UI/GamePreviews/hillCover.jpg.meta
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
