@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1268045281230498293}
   - component: {fileID: 3741067383219618717}
   - component: {fileID: 7451722129145015450}
+  - component: {fileID: 7913307427556613687}
   m_Layer: 0
   m_Name: AlbyDialogueBox
   m_TagString: Untagged
@@ -130,11 +131,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e04909fb5132ef4d8d22e9189fe6f66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeDuration: 0.25
   continueButton: {fileID: 0}
   textDisplay: {fileID: 7343658194450403039}
+  textDisplayGO: {fileID: 0}
   nameText: {fileID: 6925296119072369261}
-  fadeDuration: 0.25
-  storyText: 
+  nameTextGO: {fileID: 0}
   closeOtherDialogues: 0
   characterImage: {fileID: 626753300295012200}
   fitTextWithImage: 1
@@ -150,12 +152,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43272ce3322a15d4d886825e1b035f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playBeeps: 1
   beepSounds:
   - {fileID: 8300000, guid: d0f5779e9778b044e89741c419f8dd98, type: 3}
   - {fileID: 8300000, guid: ba3c9cdb459d3e146b842c73adaf6548, type: 3}
   targetAudioSource: {fileID: 7451722129145015450}
   volume: 0.944
+  inputSound: {fileID: 0}
+  audioMode: 0
+  loop: 1
 --- !u!82 &7451722129145015450
 AudioSource:
   m_ObjectHideFlags: 0
@@ -167,6 +171,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -252,6 +257,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7913307427556613687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3560494724856702529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f54218307101f4aa67a0141b78399e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3875358443838702535
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,15 +379,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 1
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 00000000
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -574,15 +593,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 00000000
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0

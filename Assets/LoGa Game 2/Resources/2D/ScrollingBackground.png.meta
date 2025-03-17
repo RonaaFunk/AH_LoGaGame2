@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: dc47b4b92b2252446a8ae17d3bd6c185
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8462574772798709744
+    second: ScrollingBackground_0
+  - first:
+      213: 1500213433944740305
+    second: ScrollingBackground_1
+  - first:
+      213: 1226554378159673535
+    second: ScrollingBackground_2
+  - first:
+      213: 2640213131600889867
+    second: ScrollingBackground_3
+  - first:
+      213: -3308962135120895129
+    second: ScrollingBackground_4
+  - first:
+      213: 8131004222773233699
+    second: ScrollingBackground_5
+  - first:
+      213: 432711813364384536
+    second: ScrollingBackground_6
+  - first:
+      213: 2988254498576516432
+    second: ScrollingBackground_7
+  - first:
+      213: -963802453765776890
+    second: ScrollingBackground_8
+  - first:
+      213: 70885914434113939
+    second: ScrollingBackground_9
+  - first:
+      213: -3107381517217272866
+    second: ScrollingBackground_10
+  - first:
+      213: -6432832314959647359
+    second: ScrollingBackground_11
+  - first:
+      213: 7870851465533275037
+    second: ScrollingBackground_12
+  - first:
+      213: -4741547415769233343
+    second: ScrollingBackground_13
+  - first:
+      213: -6119895052876952300
+    second: ScrollingBackground_14
+  - first:
+      213: -6166522505361911405
+    second: ScrollingBackground_15
+  - first:
+      213: -2634090704430046656
+    second: ScrollingBackground_16
+  - first:
+      213: -3540163661373172651
+    second: ScrollingBackground_17
+  - first:
+      213: -4025404832148868728
+    second: ScrollingBackground_18
+  - first:
+      213: 4334491926154590843
+    second: ScrollingBackground_19
+  - first:
+      213: 2082169318549512329
+    second: ScrollingBackground_20
+  - first:
+      213: -8565440356760239059
+    second: ScrollingBackground_21
+  - first:
+      213: -6655568893621161272
+    second: ScrollingBackground_22
+  - first:
+      213: 8705246236385609190
+    second: ScrollingBackground_23
+  - first:
+      213: 8109032227549460135
+    second: ScrollingBackground_24
+  - first:
+      213: 7289081926931014344
+    second: ScrollingBackground_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ScrollingBackground_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1144
+        width: 642
+        height: 899
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 010a62ea415ee8a80800000000000000
+      internalID: -8462574772798709744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_1
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 1913
+        width: 100
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d19b817b24d1d410800000000000000
+      internalID: 1500213433944740305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_2
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 2003
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb058e755b8950110800000000000000
+      internalID: 1226554378159673535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_3
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 1918
+        width: 45
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b088460dadbe3a420800000000000000
+      internalID: 2640213131600889867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_4
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 1592
+        width: 191
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 763a6e048743412d0800000000000000
+      internalID: -3308962135120895129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_5
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 2037
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 328899db24127d070800000000000000
+      internalID: 8131004222773233699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_6
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 1617
+        width: 137
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81303b50a1d410600800000000000000
+      internalID: 432711813364384536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_7
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1992
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 055cd1e42a9687920800000000000000
+      internalID: 2988254498576516432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_8
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 1985
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60a14a556c2ef92f0800000000000000
+      internalID: -963802453765776890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_9
+      rect:
+        serializedVersion: 2
+        x: 1483
+        y: 1834
+        width: 152
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3919c651d56dbf000800000000000000
+      internalID: 70885914434113939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_10
+      rect:
+        serializedVersion: 2
+        x: 1945
+        y: 1144
+        width: 103
+        height: 852
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edb66a449fc50e4d0800000000000000
+      internalID: -3107381517217272866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_11
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 1936
+        width: 80
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18d2d27971df9b6a0800000000000000
+      internalID: -6432832314959647359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_12
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 1937
+        width: 60
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9b39f2d4b1ea3d60800000000000000
+      internalID: 7870851465533275037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_13
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1940
+        width: 52
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14847654fb3a23eb0800000000000000
+      internalID: -4741547415769233343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_14
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 1946
+        width: 48
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41d499ebfd3c11ba0800000000000000
+      internalID: -6119895052876952300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_15
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1950
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3919378f37c1c6aa0800000000000000
+      internalID: -6166522505361911405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_16
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 1948
+        width: 44
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 042e948d574d17bd0800000000000000
+      internalID: -2634090704430046656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_17
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1952
+        width: 58
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5541b1518efcedec0800000000000000
+      internalID: -3540163661373172651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_18
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1963
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88130a6f1a3e228c0800000000000000
+      internalID: -4025404832148868728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_19
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 1968
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a3e341175372c30800000000000000
+      internalID: 4334491926154590843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_20
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 1971
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9806c52a6f955ec10800000000000000
+      internalID: 2082169318549512329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 250
+        width: 689
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d24c28e8061712980800000000000000
+      internalID: -8565440356760239059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_22
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 664
+        width: 1094
+        height: 887
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c2329d9a5ba2a3a0800000000000000
+      internalID: -6655568893621161272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_23
+      rect:
+        serializedVersion: 2
+        x: 1945
+        y: 250
+        width: 103
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e50212645f3fc870800000000000000
+      internalID: 8705246236385609190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_24
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 0
+        width: 369
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a6b743f8d1198070800000000000000
+      internalID: 8109032227549460135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScrollingBackground_25
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 0
+        width: 608
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c26171b465082560800000000000000
+      internalID: 7289081926931014344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ScrollingBackground_0: -8462574772798709744
+      ScrollingBackground_1: 1500213433944740305
+      ScrollingBackground_10: -3107381517217272866
+      ScrollingBackground_11: -6432832314959647359
+      ScrollingBackground_12: 7870851465533275037
+      ScrollingBackground_13: -4741547415769233343
+      ScrollingBackground_14: -6119895052876952300
+      ScrollingBackground_15: -6166522505361911405
+      ScrollingBackground_16: -2634090704430046656
+      ScrollingBackground_17: -3540163661373172651
+      ScrollingBackground_18: -4025404832148868728
+      ScrollingBackground_19: 4334491926154590843
+      ScrollingBackground_2: 1226554378159673535
+      ScrollingBackground_20: 2082169318549512329
+      ScrollingBackground_21: -8565440356760239059
+      ScrollingBackground_22: -6655568893621161272
+      ScrollingBackground_23: 8705246236385609190
+      ScrollingBackground_24: 8109032227549460135
+      ScrollingBackground_25: 7289081926931014344
+      ScrollingBackground_3: 2640213131600889867
+      ScrollingBackground_4: -3308962135120895129
+      ScrollingBackground_5: 8131004222773233699
+      ScrollingBackground_6: 432711813364384536
+      ScrollingBackground_7: 2988254498576516432
+      ScrollingBackground_8: -963802453765776890
+      ScrollingBackground_9: 70885914434113939
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
