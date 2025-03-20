@@ -10,29 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b4ddc75f9f1b3043893d0de76d49f2c, type: 3}
-  m_Name: Home
+  m_Name: Home3
   m_EditorClassIdentifier: 
-  infoID: ae9f75de-b05f-4b97-91a9-28a5dd8d9a86
-  Position: 50.9170332606599, -1.40197360695399
+  infoID: b6fd23e2-40d5-4515-a39f-67e60a35a4fa
+  Position: 50.91711341003, -1.40195584313714
   Name: Home
   Sprite: {fileID: 21300000, guid: 17061f77a07ee5045a82586e31348926, type: 3}
   InProgressSprite: {fileID: 0}
   CompletedSprite: {fileID: 0}
   Color: {r: 1, g: 1, b: 1, a: 1}
-  ShowName: 0
+  ShowName: 1
   showRadius: 0
   defaultRadiusColour: {r: 188, g: 120, b: 61, a: 150}
   visitedRadiusColour: {r: 188, g: 120, b: 61, a: 150}
   completedRadiusColour: {r: 188, g: 120, b: 61, a: 150}
   locationDisabled: 0
-  radiusIncrease: 0.1
+  radiusIncrease: -2
   interactable: 1
   saveInfo: 1
   indepedentMarkerUpdating: 0
   allowClickWithoutLocation: 0
-  locationStatus: 0
-  infoImage: {fileID: 0}
+  locationStatus: 2
+  infoImage: {fileID: 21300000, guid: 17061f77a07ee5045a82586e31348926, type: 3}
   displayName: 
   description: 
-  nodeComplete: Home1
-  executeNode: 
+  nodeComplete: Auroch1
+  executeNode: Auroch1

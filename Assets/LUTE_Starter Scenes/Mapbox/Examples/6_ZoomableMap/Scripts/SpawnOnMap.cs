@@ -22,7 +22,8 @@
         [SerializeField] protected DirectionsFactory _directionPrefab;
 
         [SerializeField] private GameObject _radiusCirclePrefab;
-        [SerializeField] GameObject _background;
+        //[SerializeField] GameObject _background;
+        [SerializeField] GameObject[] toHide;
 
         private List<LocationMarker> _spawnedObjects;
         private List<LUTELocationInfo> _locationData = new List<LUTELocationInfo>();
@@ -694,11 +695,15 @@
                 _mapCam.enabled = !_mapCam.enabled;
                 
                 if (_mapCam.enabled){
-                    _background.SetActive(false);
+                    foreach (var ui in toHide){
+                        ui.SetActive(false);
+                    }
                 }
 
                 if (!_mapCam.enabled){
-                    _background.SetActive(true);
+                    foreach (var ui in toHide){
+                        ui.SetActive(true);
+                    }
                 }
 
                 /**
