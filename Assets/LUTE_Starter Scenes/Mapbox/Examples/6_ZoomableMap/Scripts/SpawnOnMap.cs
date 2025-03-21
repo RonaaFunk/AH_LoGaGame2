@@ -717,6 +717,20 @@
             return false;
         }
 
+        public void CloseMap()
+        {
+            var _mapCam = GetComponent<QuadTreeCameraMovement>()?._referenceCamera;
+            //set the tracker cam to this cam
+            tracker.GetComponent<CameraBillboard>()?.SetCanvasCam(_mapCam);
+            
+            if (_mapCam.enabled == true)
+            {
+                _mapCam.enabled = false;
+                toHide[0].SetActive(true);
+                
+            }
+        }
+
         public void RemoveLocationMarker(LocationVariable location)
         {
             if (_spawnedObjects == null || location == null || _spawnedObjects.Count <= 0)

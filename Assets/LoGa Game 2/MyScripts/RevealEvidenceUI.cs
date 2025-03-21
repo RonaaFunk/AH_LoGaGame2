@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace LoGaCulture.LUTE
@@ -6,7 +7,9 @@ namespace LoGaCulture.LUTE
     {
         [SerializeField] GameObject _unfoundIcon;
         [SerializeField] GameObject _objectRender;
-        public bool isFound;
+        [SerializeField] EvidenceManager evidenceManager;
+        [SerializeField] string evidenceID;
+        public bool isFound = false;
         void Start()
         {
             if (isFound == false)
@@ -14,14 +17,38 @@ namespace LoGaCulture.LUTE
                 _unfoundIcon.SetActive(true);
                 _objectRender.SetActive(false);
             }
+            else
+            {
+                _unfoundIcon.SetActive(false);
+                _objectRender.SetActive(true);
+            }
         }
 
-        public void FoundEvidence()
+        void Update()
         {
-            isFound = true;
-            _unfoundIcon.SetActive(false);
-            _objectRender.SetActive(true);
+            if (evidenceManager.evidenceDict[evidenceID] == true){
+                isFound = true;
+            }
+
+            if (isFound == false)
+            {
+                _unfoundIcon.SetActive(true);
+                _objectRender.SetActive(false);
+            }
+            else
+            {
+                _unfoundIcon.SetActive(false);
+                _objectRender.SetActive(true);
+            }
         }
-        
+
+        // private void Update()
+        // {
+        //     if (evidenceManager.evidenceDict[evidenceID] == true)
+        //     {
+        //         _unfoundIcon.SetActive(false);
+        //         _objectRender.SetActive(true);
+        //     }
+        // }        
     }
 }
