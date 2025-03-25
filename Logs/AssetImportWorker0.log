@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '6000.0/release' branch; Version is '6000.0.29f1 (9fafe5c9db65) revision 10465253'; Using compiler version '193933523'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'en' Physical Memory: 16217 MB
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 32619 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,19 +11,19 @@ C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/ashaw/Documents/AH_LoGaGame2
+C:/Users/aaron.hawke/Desktop/AH_LoGaGame2
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52676
+59383
 -job-worker-count
-3
+5
 -background-job-worker-count
 8
 -asset-garbage-collectors
 1
-Successfully changed project path to: C:/Users/ashaw/Documents/AH_LoGaGame2
-C:/Users/ashaw/Documents/AH_LoGaGame2
+Successfully changed project path to: C:/Users/aaron.hawke/Desktop/AH_LoGaGame2
+C:/Users/aaron.hawke/Desktop/AH_LoGaGame2
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -59,15 +59,13 @@ C:/Users/ashaw/Documents/AH_LoGaGame2
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [6876]  Target information:
+Player connection [10176]  Target information:
 
-Player connection [6876]  * "[IP] 172.22.80.1 [Port] 0 [Flags] 2 [Guid] 1874365927 [EditorId] 1874365927 [Version] 1048832 [Id] WindowsEditor(7,AaronsSurface) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [10176]  * "[IP] 192.168.0.236 [Port] 0 [Flags] 2 [Guid] 2374805714 [EditorId] 2374805714 [Version] 1048832 [Id] WindowsEditor(7,AMZWS05) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [6876]  * "[IP] 192.168.0.252 [Port] 0 [Flags] 2 [Guid] 1874365927 [EditorId] 1874365927 [Version] 1048832 [Id] WindowsEditor(7,AaronsSurface) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [6876] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [6876] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 3
+Player connection [10176] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [10176] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
 Library Redirect Path: Library/
@@ -77,60 +75,65 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 643.14 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 5.35 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.29f1 (9fafe5c9db65)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/ashaw/Documents/AH_LoGaGame2/Assets
+[Subsystems] Discovering subsystems at path C:/Users/aaron.hawke/Desktop/AH_LoGaGame2/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
-    Vendor:   Intel
-    VRAM:     8108 MB
-    Driver:   31.0.101.3889
+    Renderer: NVIDIA GeForce RTX 4060 Ti (ID=0x2803)
+    Vendor:   NVIDIA
+    VRAM:     7949 MB
+    Driver:   32.0.15.6094
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56644
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56692
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004923 seconds.
-- Loaded All Assemblies, in  0.744 seconds
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.004127 seconds.
+- Loaded All Assemblies, in  0.379 seconds
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 244 ms
 Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.723 seconds
-Domain Reload Profiling: 1464ms
-	BeginReloadAssembly (294ms)
+- Finished resetting the current domain, in  0.602 seconds
+Domain Reload Profiling: 979ms
+	BeginReloadAssembly (124ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (79ms)
-	RebuildNativeTypeToScriptingClass (22ms)
-	initialDomainReloadingComplete (88ms)
-	LoadAllAssembliesAndSetupDomain (257ms)
-		LoadAssemblies (289ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (159ms)
+		LoadAssemblies (123ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (253ms)
-			TypeCache.Refresh (250ms)
-				TypeCache.ScanAssembly (228ms)
+		AnalyzeDomain (156ms)
+			TypeCache.Refresh (154ms)
+				TypeCache.ScanAssembly (142ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (724ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (603ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (622ms)
+		SetupLoadedEditorAssemblies (551ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (41ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (14ms)
-			ProcessInitializeOnLoadAttributes (397ms)
-			ProcessInitializeOnLoadMethodAttributes (155ms)
-			AfterProcessingInitializeOnLoad (7ms)
+			InitializePlatformSupportModulesInManaged (355ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (7ms)
+			ProcessInitializeOnLoadAttributes (127ms)
+			ProcessInitializeOnLoadMethodAttributes (54ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
@@ -138,12 +141,13 @@ Domain Reload Profiling: 1464ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  2.043 seconds
+- Loaded All Assemblies, in  0.883 seconds
 Script 'VideoPlayer' has the same name as built-in Unity component.
 AddComponent and GetComponent will not work with this script.
-Refreshing native plugins compatible for Editor in 17.97 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 3.84 ms, found 6 plugins.
+Native extension for Android target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 26.64 ms, found 6 plugins.
+Native extension for WebGL target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -154,7 +158,7 @@ Package Manager log level set to [2]
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.TypeInitializationException: The type initializer for 'UnityEditor.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor.ARStarterAssetsSampleProjectValidation' threw an exception. ---> System.NullReferenceException: Object reference not set to an instance of an object
   at Unity.XR.CoreUtils.Editor.PackageVersionUtility.UpdatePackageVersions () [0x00034] in .\Library\PackageCache\com.unity.xr.core-utils\Editor\ProjectValidation\PackageVersionUtility.cs:46 
   at Unity.XR.CoreUtils.Editor.PackageVersionUtility.GetPackageVersion (System.String packageName) [0x00011] in .\Library\PackageCache\com.unity.xr.core-utils\Editor\ProjectValidation\PackageVersionUtility.cs:67 
-  at UnityEditor.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor.ARStarterAssetsSampleProjectValidation..cctor () [0x00032] in C:\Users\ashaw\Documents\AH_LoGaGame2\Assets\LUTE\ThirdPartyAssets\XR\Samples\XR Interaction Toolkit\3.0.7\AR Starter Assets\Editor\Scripts\ARStarterAssetsSampleProjectValidation.cs:32 
+  at UnityEditor.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor.ARStarterAssetsSampleProjectValidation..cctor () [0x00032] in C:\Users\aaron.hawke\Desktop\AH_LoGaGame2\Assets\LUTE\ThirdPartyAssets\XR\Samples\XR Interaction Toolkit\3.0.7\AR Starter Assets\Editor\Scripts\ARStarterAssetsSampleProjectValidation.cs:32 
    --- End of inner exception stack trace ---
   at (wrapper managed-to-native) System.Object.__icall_wrapper_mono_gc_wbarrier_generic_nostore_internal(intptr)
   at (wrapper write-barrier) System.Object.wbarrier_conc(intptr)
@@ -179,1360 +183,350 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  2.324 seconds
-Domain Reload Profiling: 4350ms
-	BeginReloadAssembly (294ms)
+- Finished resetting the current domain, in  1.012 seconds
+Domain Reload Profiling: 1891ms
+	BeginReloadAssembly (157ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (50ms)
-	RebuildCommonClasses (71ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (83ms)
-	LoadAllAssembliesAndSetupDomain (1559ms)
-		LoadAssemblies (1105ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (640ms)
+		LoadAssemblies (405ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (630ms)
-			TypeCache.Refresh (433ms)
-				TypeCache.ScanAssembly (398ms)
-			BuildScriptInfoCaches (168ms)
-			ResolveRequiredComponents (23ms)
-	FinalizeReload (2325ms)
+		AnalyzeDomain (330ms)
+			TypeCache.Refresh (224ms)
+				TypeCache.ScanAssembly (203ms)
+			BuildScriptInfoCaches (87ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1012ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2086ms)
+		SetupLoadedEditorAssemblies (875ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (24ms)
-			BeforeProcessingInitializeOnLoad (211ms)
-			ProcessInitializeOnLoadAttributes (1697ms)
-			ProcessInitializeOnLoadMethodAttributes (135ms)
-			AfterProcessingInitializeOnLoad (12ms)
-			EditorAssembliesLoaded (1ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (87ms)
+			ProcessInitializeOnLoadAttributes (685ms)
+			ProcessInitializeOnLoadMethodAttributes (76ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 17.28 ms, found 6 plugins.
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 4.54 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 141 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 8540 unused Assets / (9.8 MB). Loaded Objects now: 9019.
-Memory consumption went from 206.2 MB to 196.3 MB.
-Total: 20.783900 ms (FindLiveObjects: 1.074900 ms CreateObjectMapping: 1.799400 ms MarkObjects: 9.813900 ms  DeleteObjects: 8.093800 ms)
+Unloading 8540 unused Assets / (10.4 MB). Loaded Objects now: 9022.
+Memory consumption went from 210.3 MB to 199.9 MB.
+Total: 13.168300 ms (FindLiveObjects: 1.118800 ms CreateObjectMapping: 0.925600 ms MarkObjects: 5.756500 ms  DeleteObjects: 5.365900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 783240.291798 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_Map.cs
-  artifactKey: Guid(02c5791defbcf4d1ebf04166ef29344b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_Map.cs using Guid(02c5791defbcf4d1ebf04166ef29344b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '91f483574651edaca922efce8804720e') in 0.0148452 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 3504375.907375 seconds.
+  path: Assets/LoGa Game 2/Prefabs/PF_Evidence.prefab
+  artifactKey: Guid(cad392f78dd283d4caa097e65e52adf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Prefabs/PF_Evidence.prefab using Guid(cad392f78dd283d4caa097e65e52adf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f7705b653d64ba5565cec26f74d5d31c') in 0.0608888 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 39
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/LoGa Game 2/Scenes/S_Main.unity
-  artifactKey: Guid(97f1eb2db8fdfd143b8613ea4152f635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LoGa Game 2/Scenes/S_Main.unity using Guid(97f1eb2db8fdfd143b8613ea4152f635) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1d3ae9cf52b08bc5457a12f8b8c2953f') in 0.0028701 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 1511.890594 seconds.
-  path: Assets/LoGa Game 2/Resources
-  artifactKey: Guid(25dcbba034878cc4ebc104161ca9bc02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LoGa Game 2/Resources using Guid(25dcbba034878cc4ebc104161ca9bc02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6c39a2e3bec336d50247f0ba7e6d6a6e') in 0.0087571 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.038671 seconds.
-  path: Assets/LoGa Game 2/Resources/2D
-  artifactKey: Guid(bdb620eff40063140a63022e77d1e8d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LoGa Game 2/Resources/2D using Guid(bdb620eff40063140a63022e77d1e8d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8668725186e8728d34c497268153ba4d') in 0.0027754 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.883195 seconds.
+  Time since last request: 21.542158 seconds.
   path: Assets/LoGa Game 2/Resources/2D/ButtonLoGa1.png
   artifactKey: Guid(d18f00a8f1717e74ba623b94f61cb211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LoGa Game 2/Resources/2D/ButtonLoGa1.png using Guid(d18f00a8f1717e74ba623b94f61cb211) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e6d0e852e7389644c7b23a0ebcaa033a') in 0.5921988 seconds
+Start importing Assets/LoGa Game 2/Resources/2D/ButtonLoGa1.png using Guid(d18f00a8f1717e74ba623b94f61cb211) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6dd9834615b58f4dc72bce8dbe6dd850') in 0.1062405 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 27.292006 seconds.
-  path: Assets/LoGa Game 2/Resources/2D/ButtonLoGa1.png
-  artifactKey: Guid(d18f00a8f1717e74ba623b94f61cb211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LoGa Game 2/Resources/2D/ButtonLoGa1.png using Guid(d18f00a8f1717e74ba623b94f61cb211) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '04bd619f7b62a53a870f8058a8bc55a2') in 0.0445736 seconds
+  Time since last request: 0.693036 seconds.
+  path: Assets/LoGa Game 2/Resources/2D/Banner.png
+  artifactKey: Guid(defc447d63d85b64ba3b2dfc56a3dd3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D/Banner.png using Guid(defc447d63d85b64ba3b2dfc56a3dd3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6a4915f32fea389f050258e999d44263') in 0.0211209 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 67.016300 seconds.
-  path: Assets/LoGa Game 2/Resources/2D/ButtonLoGa1.png
-  artifactKey: Guid(d18f00a8f1717e74ba623b94f61cb211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LoGa Game 2/Resources/2D/ButtonLoGa1.png using Guid(d18f00a8f1717e74ba623b94f61cb211) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ea4a99a3c90f1f5932e2cb6037f55c24') in 0.0496315 seconds
+  Time since last request: 1.075711 seconds.
+  path: Assets/LoGa Game 2/Resources/2D/Circle.png
+  artifactKey: Guid(865c80fcf48c9d74dbf9dd09dd3bf25b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D/Circle.png using Guid(865c80fcf48c9d74dbf9dd09dd3bf25b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '54f900e07f7fdddba460e5d4eedd2297') in 0.0223552 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 130.153624 seconds.
-  path: Assets/LoGa Game 2/Resources/2D/ButtonLoGa1.png
-  artifactKey: Guid(d18f00a8f1717e74ba623b94f61cb211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LoGa Game 2/Resources/2D/ButtonLoGa1.png using Guid(d18f00a8f1717e74ba623b94f61cb211) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e83325ddcaf8af781e249fe893a0bed7') in 0.0476284 seconds
+  Time since last request: 0.148299 seconds.
+  path: Assets/LoGa Game 2/Resources/2D/DialogBoxAncientSliced.png
+  artifactKey: Guid(f39dba8dc6c6c3c449520c113454b1bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D/DialogBoxAncientSliced.png using Guid(f39dba8dc6c6c3c449520c113454b1bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '31e5b1a417d5ceb570dbed0f006c940d') in 0.0220174 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 102.910278 seconds.
-  path: Assets/LoGa Game 2/Resources/2D/ButtonLoGa1.png
-  artifactKey: Guid(d18f00a8f1717e74ba623b94f61cb211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LoGa Game 2/Resources/2D/ButtonLoGa1.png using Guid(d18f00a8f1717e74ba623b94f61cb211) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f6f812e7bb09d3aa16e848bc4c1990d5') in 0.0698808 seconds
+  Time since last request: 0.143734 seconds.
+  path: Assets/LoGa Game 2/Resources/2D/FullArrowRight.png
+  artifactKey: Guid(336f258fa2a661644a9ad66a6fd25d50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D/FullArrowRight.png using Guid(336f258fa2a661644a9ad66a6fd25d50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f92b5038ca55b62208b6ae9f86b906b0') in 0.0212333 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 29.828597 seconds.
-  path: Assets/LoGa Game 2/Resources/2D/ButtonLoGa1.png
-  artifactKey: Guid(d18f00a8f1717e74ba623b94f61cb211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LoGa Game 2/Resources/2D/ButtonLoGa1.png using Guid(d18f00a8f1717e74ba623b94f61cb211) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9dff01f9f3ccfa16c176f9ed41c32384') in 0.0599798 seconds
+  Time since last request: 0.474559 seconds.
+  path: Assets/LoGa Game 2/Resources/2D/LargeStonePanel.png
+  artifactKey: Guid(72109559b701eec41a72ab8d9c87ebed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D/LargeStonePanel.png using Guid(72109559b701eec41a72ab8d9c87ebed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b6a2f5691c084fd54c43015790ae67e3') in 0.0224586 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 324.128320 seconds.
-  path: Assets/LoGa Game 2/Resources/2D/Ancient Map Icon.png
-  artifactKey: Guid(07b5948a746974643900ca16d8f19cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LoGa Game 2/Resources/2D/Ancient Map Icon.png using Guid(07b5948a746974643900ca16d8f19cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '31587a07077a5c6e47196a5d1a7e183c') in 0.0567227 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 215.667197 seconds.
-  path: Assets/LoGa Game 2/Resources/2D/ButtonLoGa1.png
-  artifactKey: Guid(d18f00a8f1717e74ba623b94f61cb211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LoGa Game 2/Resources/2D/ButtonLoGa1.png using Guid(d18f00a8f1717e74ba623b94f61cb211) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7dc518952df48a645459ce61f70a6087') in 0.0795763 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 173.314613 seconds.
-  path: Assets/LoGa Game 2/Resources/2D/Ancient Menu Icon.png
-  artifactKey: Guid(8b3c0752d00c2a3439115fb5e612c005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LoGa Game 2/Resources/2D/Ancient Menu Icon.png using Guid(8b3c0752d00c2a3439115fb5e612c005) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aa67cd9a7a946c27542a672e97a21399') in 0.0914217 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.979144 seconds.
-  path: Assets/LoGa Game 2/Prefabs/PF_HuntSelection.prefab
-  artifactKey: Guid(2ad40661ee027944db6d0a2a5e6b8262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LoGa Game 2/Prefabs/PF_HuntSelection.prefab using Guid(2ad40661ee027944db6d0a2a5e6b8262) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '11ece734d4b1e2c67647a68f635d02a0') in 0.113047 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 35
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.419343 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/6_ZoomableMap/Screenshots/ZoomableMap.png
-  artifactKey: Guid(f1321adbaa6e24299bb58ab33ad3adf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/6_ZoomableMap/Screenshots/ZoomableMap.png using Guid(f1321adbaa6e24299bb58ab33ad3adf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '008352e56edd3eab051a6733ad499af8') in 0.05433 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/zoo-15.png
-  artifactKey: Guid(8e1b3d7011cd4ff4bb10438e495d6073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/zoo-15.png using Guid(8e1b3d7011cd4ff4bb10438e495d6073) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3288903b2c59f40005db1c0e5a94bc89') in 0.0374373 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/UI/GamePreviews/XRIcon.png
-  artifactKey: Guid(192858852373e1046a06930f6bd6cb05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/UI/GamePreviews/XRIcon.png using Guid(192858852373e1046a06930f6bd6cb05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '86c5bba6783f7986b0125dc7dbf89f82') in 0.0293494 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.414110 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/water-15.png
-  artifactKey: Guid(adc98df7d2e216c4294db26b0fe7ca87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/water-15.png using Guid(adc98df7d2e216c4294db26b0fe7ca87) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b3f9cea1ebc9e2ca80dd9431c611bd9c') in 0.0356579 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/wheelchair-15.png
-  artifactKey: Guid(c2cc9bfd9d26ce146bed5db4dc5bfff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/wheelchair-15.png using Guid(c2cc9bfd9d26ce146bed5db4dc5bfff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '62aa26f78fbca14d7f1d0a3267a64c23') in 0.0596134 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.058638 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/8_VoxelMap/Screenshots/VoxelMap.png
-  artifactKey: Guid(805ed9e7e2bcd4071bd22b135125a912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/8_VoxelMap/Screenshots/VoxelMap.png using Guid(805ed9e7e2bcd4071bd22b135125a912) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cba53d839ef0bdb2ee9ef71510447d15') in 0.0370656 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/Geotags/undiscovered100_new.png
-  artifactKey: Guid(6a93ba6c38197db4fb34c36028f98c24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/Geotags/undiscovered100_new.png using Guid(6a93ba6c38197db4fb34c36028f98c24) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '89e6de1111ec1e02c99842de87214add') in 0.0543151 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/LUTE/EditorResources/Icons/undiscovered100_new.png
-  artifactKey: Guid(93a2368be3ed45740870912b34a49ee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/EditorResources/Icons/undiscovered100_new.png using Guid(93a2368be3ed45740870912b34a49ee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e26de62239fca0901ec1a2f29496d7ef') in 0.0587637 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/waste-basket-15.png
-  artifactKey: Guid(d6e1dd6c5dbc43d43adbe36b7c00b38a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/waste-basket-15.png using Guid(d6e1dd6c5dbc43d43adbe36b7c00b38a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '037a32c3eb5a8fac7b3da7e198449dd2') in 0.0465186 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.092619 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/town-hall-15.png
-  artifactKey: Guid(9102b449df46d244c852c3c6e92f99dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/town-hall-15.png using Guid(9102b449df46d244c852c3c6e92f99dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4ac1598e1a0ab4ab3da687939d9dc3e7') in 0.0406267 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.010933 seconds.
-  path: Assets/LUTE/Resources/Textures/trophyIcon.png
-  artifactKey: Guid(c1ca9d9a32b11744aa9e23bd53ea0b0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/Resources/Textures/trophyIcon.png using Guid(c1ca9d9a32b11744aa9e23bd53ea0b0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3f12431e545d2744d407d02de4a7b433') in 0.051345 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000540 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/telephone-15.png
-  artifactKey: Guid(ac8cf0225fee67d4f86b968f8ed64468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/telephone-15.png using Guid(ac8cf0225fee67d4f86b968f8ed64468) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a5679e11db13d5ffaf7c567d7e2ea86d') in 0.0628453 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/Geotags/undiscovered50.png
-  artifactKey: Guid(bcaf9534524471c499aed34eb5f49111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/Geotags/undiscovered50.png using Guid(bcaf9534524471c499aed34eb5f49111) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a069b9c8d5775d30770de85c203c16fc') in 0.0390347 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Resources/Mapbox/PrefabScreens/TabletopAR.gif
-  artifactKey: Guid(e96036a81f146439cb33587e192539c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Resources/Mapbox/PrefabScreens/TabletopAR.gif using Guid(e96036a81f146439cb33587e192539c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a79d59c3c71ac1b6aa023c79dd3045ad') in 0.0529005 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/tennis-15.png
-  artifactKey: Guid(8d18b54c5e9a44f46a18d7585f895a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/tennis-15.png using Guid(8d18b54c5e9a44f46a18d7585f895a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f13a4bd26d8017ff9774eafb4c64b46c') in 0.045448 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.069449 seconds.
-  path: Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/Stickers/Sprites/Sun.png
-  artifactKey: Guid(5e06a4f9a236917438c8161c57807201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/Stickers/Sprites/Sun.png using Guid(5e06a4f9a236917438c8161c57807201) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'af8c5714b366f833c7110d469011cabe') in 0.0408251 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/swimming-15.png
-  artifactKey: Guid(efae5cfb6e53ae8409aecbf7eef40ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/swimming-15.png using Guid(efae5cfb6e53ae8409aecbf7eef40ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '27ab591f9ae9fe9b7bdb61ccb2253584') in 0.0612364 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/LUTE/EditorResources/Textures/stretchedNode.png
-  artifactKey: Guid(a3f3e6bafc7150d478c26bb57838e475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/EditorResources/Textures/stretchedNode.png using Guid(a3f3e6bafc7150d478c26bb57838e475) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12d3d65370419a9d771dcbbfb7d50550') in 0.0421348 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000077 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/stadium-15.png
-  artifactKey: Guid(5cd344da491f1044ba6206898a1e79f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/stadium-15.png using Guid(5cd344da491f1044ba6206898a1e79f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c604ddcc6f8707e92fbd234306ca1e80') in 0.0510636 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.375740 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square/snake.png
-  artifactKey: Guid(2e224a41edb1f8345ab0e8dffebed773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square/snake.png using Guid(2e224a41edb1f8345ab0e8dffebed773) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b192ad01a9eab1054bb1bc8ad85f9458') in 0.036129 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/square-15.png
-  artifactKey: Guid(d20eb1ed6e139ec448e72058bfbf4e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/square-15.png using Guid(d20eb1ed6e139ec448e72058bfbf4e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2f987a2d44e678b5f34ad38115c5e5f6') in 0.0582973 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005640 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round/snake.png
-  artifactKey: Guid(37ec33346fdcf564aa8f666683c138ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round/snake.png using Guid(37ec33346fdcf564aa8f666683c138ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1610e8d33a7ae9aa7b0daa8cae4f9f5a') in 0.0431553 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round without details (outline)/snake.png
-  artifactKey: Guid(630cb2117efbda9429c585817b7bc078) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round without details (outline)/snake.png using Guid(630cb2117efbda9429c585817b7bc078) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9713217e69f90b4b214d16b0b592d664') in 0.0378581 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.018210 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round without details (outline)/slice09_09.png
-  artifactKey: Guid(7ad0d17c72a75134da4862b9da1fc7a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round without details (outline)/slice09_09.png using Guid(7ad0d17c72a75134da4862b9da1fc7a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '274e3a31ac8de0b155316c17f196938d') in 0.0321089 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round (outline)/snake.png
-  artifactKey: Guid(57776b7d32c21a34dbb9b375fee01480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round (outline)/snake.png using Guid(57776b7d32c21a34dbb9b375fee01480) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '576a6123f4ed5cc6739e36f42f96c8d1') in 0.0428866 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square (outline)/snake.png
-  artifactKey: Guid(8e8cc803618f93f49810f36c5ab0ae86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square (outline)/snake.png using Guid(8e8cc803618f93f49810f36c5ab0ae86) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e32294021a2a9a5cf502ec8acb645895') in 0.0362577 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.275332 seconds.
-  path: Assets/LUTE/Resources/Textures/six sided die.png
-  artifactKey: Guid(d7128c6cb3e35204187f96ec54319193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/Resources/Textures/six sided die.png using Guid(d7128c6cb3e35204187f96ec54319193) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e88c0eacfdadbf8a5463d279bcf18c3d') in 0.8317443 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 92
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.015627 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/shop-15.png
-  artifactKey: Guid(591053151e5690843a9abd44ebf79681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/shop-15.png using Guid(591053151e5690843a9abd44ebf79681) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b724d495759b48a7b53225bc560cf667') in 0.0423932 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/shelter-15.png
-  artifactKey: Guid(607390fa910fade45aa98f83f6e34951) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/shelter-15.png using Guid(607390fa910fade45aa98f83f6e34951) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f0c43dde8062bf3cc5071ae4e55fd2c0') in 0.0348821 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/LoGa Game 2/Resources/2D/ScrollingBackground.png
-  artifactKey: Guid(dc47b4b92b2252446a8ae17d3bd6c185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LoGa Game 2/Resources/2D/ScrollingBackground.png using Guid(dc47b4b92b2252446a8ae17d3bd6c185) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f9a03bd36152d0d02ab27c523c43c8ad') in 0.0533629 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Textures/RoundCornerStroke.png
-  artifactKey: Guid(57f0feb9c22325a428aed5b9785af52a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Textures/RoundCornerStroke.png using Guid(57f0feb9c22325a428aed5b9785af52a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '75bf5daba2949774eab8fba3f54db4d5') in 0.0359712 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001884 seconds.
-  path: Assets/LUTE/ThirdPartyAssets/XR/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/DemoSceneAssets/Sprites/Round Radius 4.png
-  artifactKey: Guid(16e87571ba2e951479f33a91dc74153a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/ThirdPartyAssets/XR/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/DemoSceneAssets/Sprites/Round Radius 4.png using Guid(16e87571ba2e951479f33a91dc74153a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dea129c511866c87676c615b33447c73') in 0.0526877 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/LUTE/ThirdPartyAssets/XR/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/DemoSceneAssets/Sprites/Round Radius 4 Outline.png
-  artifactKey: Guid(08f7d8104255fae4cad1e62479f9c614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/ThirdPartyAssets/XR/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/DemoSceneAssets/Sprites/Round Radius 4 Outline.png using Guid(08f7d8104255fae4cad1e62479f9c614) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8e766d18f8dbe0a43dc9ee5219970b4a') in 0.0460322 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/LUTE/Resources/Textures/SaveSystem/Colour/rewindColour.png
-  artifactKey: Guid(e606094f1c9151144b7c26aaa9bf8b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/Resources/Textures/SaveSystem/Colour/rewindColour.png using Guid(e606094f1c9151144b7c26aaa9bf8b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6d4c9159d8304c1bd4ad087e0112c017') in 0.0501064 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000064 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/school-15.png
-  artifactKey: Guid(b21b0426dd17d2147b0a9ac8292ced62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/school-15.png using Guid(b21b0426dd17d2147b0a9ac8292ced62) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '90882eb88ae52668027be4417a9f8567') in 0.051576 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/LUTE/Resources/Textures/SaveSystem/Outline/restartOutline.png
-  artifactKey: Guid(33de3431f96616f40aae4ac14670237e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/Resources/Textures/SaveSystem/Outline/restartOutline.png using Guid(33de3431f96616f40aae4ac14670237e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3d7364d71457e3b71d74d29e0d1e0ccd') in 0.0531012 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.271034 seconds.
-  path: Assets/LUTE/EditorResources/Icons/remove.png
-  artifactKey: Guid(432d9822191ea3244bdabb883af3541f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/EditorResources/Icons/remove.png using Guid(432d9822191ea3244bdabb883af3541f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a8137fc3bea529f58c26f7d21259b713') in 0.0506403 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/religious-muslim-15.png
-  artifactKey: Guid(b53bccd9065361e45b022c2778c6cdf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/religious-muslim-15.png using Guid(b53bccd9065361e45b022c2778c6cdf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9c40c46caaff39e4f6ebc8e0f849963b') in 0.0544257 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/religious-jewish-15.png
-  artifactKey: Guid(a4f9d53ca33c92a4e85a53dcf2bcf83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/religious-jewish-15.png using Guid(a4f9d53ca33c92a4e85a53dcf2bcf83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cde3d9a1c62f0a9974be011113ab95fb') in 0.0401291 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001824 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/ranger-station-15.png
-  artifactKey: Guid(1c632f4cb235bf247898c559eddf4f66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/ranger-station-15.png using Guid(1c632f4cb235bf247898c559eddf4f66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc54c1e95c5caf819a35e172a88ff952') in 0.0444552 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square without details/rabbit.png
-  artifactKey: Guid(d1cc158fc86a2cb48aa1aefa505a7302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square without details/rabbit.png using Guid(d1cc158fc86a2cb48aa1aefa505a7302) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5092af460796d9151d7cee5d18fa8cba') in 0.0542467 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round without details/rabbit.png
-  artifactKey: Guid(2862979c20d0ab947ba2bf9482e0f86c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round without details/rabbit.png using Guid(2862979c20d0ab947ba2bf9482e0f86c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '149b2695a526a0d942503d2f52176c8f') in 0.050497 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000075 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/rail-15.png
-  artifactKey: Guid(8d57544bec7e2c34fa61c15afe16e9bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/rail-15.png using Guid(8d57544bec7e2c34fa61c15afe16e9bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e92b8c1152e5110534109773f5f4822') in 0.0432474 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000710 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round (outline)/rabbit.png
-  artifactKey: Guid(03b8362c66dbd4f4a8f4a3bea7dee82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round (outline)/rabbit.png using Guid(03b8362c66dbd4f4a8f4a3bea7dee82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5c932e93c0df3e0a6f6da65421c59b01') in 0.0628347 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/Geotags/progress100_new.png
-  artifactKey: Guid(bb16fc8f730e49d41bfad390322f8654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/Geotags/progress100_new.png using Guid(bb16fc8f730e49d41bfad390322f8654) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc726ac217ce899e886394b24d5b7cd4') in 0.0662386 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001908 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round without details (outline)/rabbit.png
-  artifactKey: Guid(15bc040c816a25245bfac48b8cd669a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round without details (outline)/rabbit.png using Guid(15bc040c816a25245bfac48b8cd669a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fc2943f8ce21f86ddd7eaa00497e6924') in 0.0495945 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000120 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square without details (outline)/rabbit.png
-  artifactKey: Guid(afe701c4b23518f409773297a7323c4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square without details (outline)/rabbit.png using Guid(afe701c4b23518f409773297a7323c4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'feb7b9e09c78b98c2a5ff61f5f8c4aa2') in 0.0423344 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005645 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/police-15.png
-  artifactKey: Guid(c191942b2af0e7944b071a1c78fb7837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/police-15.png using Guid(c191942b2af0e7944b071a1c78fb7837) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cdb6a7ab78006cc0835ef9acf3e5b829') in 0.0325741 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.008204 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/SeminarSeriesDemo/poolehouse.png
-  artifactKey: Guid(f6d7ab8ea20ea7547b986159d0fff05a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/SeminarSeriesDemo/poolehouse.png using Guid(f6d7ab8ea20ea7547b986159d0fff05a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '822c8792fe6fd7ef82ebcc88f384f7f4') in 0.0698187 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000817 seconds.
-  path: Assets/LUTE/EditorResources/Textures/process_node_off.png
-  artifactKey: Guid(cf56557b651f6484c9208b503be9ca71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/EditorResources/Textures/process_node_off.png using Guid(cf56557b651f6484c9208b503be9ca71) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'be9acb23d3bf4962e3d568808bce8608') in 0.0979245 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.014653 seconds.
-  path: Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Portraits/portrait_katrine.png
-  artifactKey: Guid(7f3abbdcc524ec249ac8b70c47bc0c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Portraits/portrait_katrine.png using Guid(7f3abbdcc524ec249ac8b70c47bc0c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'edfc2cfb6803f49434e9ebdfc334adae') in 0.1691886 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000294 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/3_POIPlacement/Resources/poi-icon-services.png
-  artifactKey: Guid(b8b01d4fa12054e23ac744c58f0ce422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/3_POIPlacement/Resources/poi-icon-services.png using Guid(b8b01d4fa12054e23ac744c58f0ce422) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7feba3034ed466749b6389b1f6582485') in 0.1301683 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/3_POIPlacement/Resources/poi-icon-default.png
-  artifactKey: Guid(240e67c92465d4af09e98ac0ff6cb4e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/3_POIPlacement/Resources/poi-icon-default.png using Guid(240e67c92465d4af09e98ac0ff6cb4e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '067a2e9f7022643abaa7bceea7b59241') in 0.4334608 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.007561 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/3_POIPlacement/Resources/poi-icon-arts.png
-  artifactKey: Guid(808e85b573ffd4216a301aa2c9e1293f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/3_POIPlacement/Resources/poi-icon-arts.png using Guid(808e85b573ffd4216a301aa2c9e1293f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '17b88472a2be9a0d8386930a1b2b5bc0') in 0.0681908 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002324 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/3_POIPlacement/Resources/poi-icon-outdoors.png
-  artifactKey: Guid(08d14ec5687ea47fcb3de9ac267391b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/3_POIPlacement/Resources/poi-icon-outdoors.png using Guid(08d14ec5687ea47fcb3de9ac267391b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e5d83d9f523d25ed622cd5d5807ab8c') in 0.075298 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001744 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/pitch-15.png
-  artifactKey: Guid(314c2e3662ce91f4286a32ff0c49d128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/pitch-15.png using Guid(314c2e3662ce91f4286a32ff0c49d128) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '27142ca102d8d2a9f6cb6575bcd1c813') in 0.086134 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000938 seconds.
-  path: Assets/LUTE/ThirdPartyAssets/LeanTween/Examples/Textures/PowerUpStar.png
-  artifactKey: Guid(70141d51621e24facbca9196bbde84b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/ThirdPartyAssets/LeanTween/Examples/Textures/PowerUpStar.png using Guid(70141d51621e24facbca9196bbde84b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8914cbbd1b8c6731a6e8a5cda39465fa') in 0.0573228 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000443 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round (outline)/pig.png
-  artifactKey: Guid(7b1989db28e31c74b996fd9aece84fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round (outline)/pig.png using Guid(7b1989db28e31c74b996fd9aece84fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f3380de6033f57f8a32fe88d68e56fcf') in 0.084078 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/UI/pauseIcon.png
-  artifactKey: Guid(10dc7f62caf1f7344ac49ca9995cd8f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/UI/pauseIcon.png using Guid(10dc7f62caf1f7344ac49ca9995cd8f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a57797a96f51910ddfef87bb07dafec8') in 0.087668 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005739 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square without details/parrot.png
-  artifactKey: Guid(8dce4cdc7b4cb5444b041deab8324db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square without details/parrot.png using Guid(8dce4cdc7b4cb5444b041deab8324db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4dd191175b82cf11766daa9725b98e67') in 0.0470837 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001003 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round (outline)/parrot.png
-  artifactKey: Guid(e91615f7f169d554595ab82bf56cf89e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round (outline)/parrot.png using Guid(e91615f7f169d554595ab82bf56cf89e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3ae1ef9d23b0d0b267db9e8e896ec507') in 0.1256334 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000722 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square/parrot.png
-  artifactKey: Guid(a9dae377ce2b7cf4ba72955826cf0c19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square/parrot.png using Guid(a9dae377ce2b7cf4ba72955826cf0c19) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eb8f0aaa70c709de49551698a5681736') in 0.059829 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000704 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square without details (outline)/parrot.png
-  artifactKey: Guid(24e86f86e4fb91146b4cc4943c33ebec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square without details (outline)/parrot.png using Guid(24e86f86e4fb91146b4cc4943c33ebec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bbd6acc82bb25709e6a808f4a16074a6') in 0.0789337 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000116 seconds.
-  path: Assets/LUTE/Resources/Textures/padlockIcon.png
-  artifactKey: Guid(670fde7738b2919408efcbaeac8beec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/Resources/Textures/padlockIcon.png using Guid(670fde7738b2919408efcbaeac8beec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f3e0b787fa74446f924839941ef4481c') in 0.0543744 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000385 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square/panda.png
-  artifactKey: Guid(dcb9bf86f97ab8445a174a4a5c395e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square/panda.png using Guid(dcb9bf86f97ab8445a174a4a5c395e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '49e7b7be3e77b91e32d59b6d702d395d') in 0.0831239 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000102 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round/panda.png
-  artifactKey: Guid(2d75fad76854be747a42dc54cd0b9ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round/panda.png using Guid(2d75fad76854be747a42dc54cd0b9ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f75a4f49c12fe39d90bd4c65d7f085bb') in 0.15859 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005443 seconds.
-  path: Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/Geotags/playerview-64.png
-  artifactKey: Guid(f746c34709d7abb4e8da81d3f64cc990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/Geotags/playerview-64.png using Guid(f746c34709d7abb4e8da81d3f64cc990) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3cf60a3e28441d0480c432df31685e55') in 0.0982321 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.013064 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/place-of-worship-15.png
-  artifactKey: Guid(b145cd551fd36334f9d753a710b92ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/place-of-worship-15.png using Guid(b145cd551fd36334f9d753a710b92ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '85ed4faf3ff192a96cd1ea3307487021') in 0.0779641 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000068 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/UI/nearMeIcon.png
-  artifactKey: Guid(fa36c1000f66b7946b2f581e1f730a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/UI/nearMeIcon.png using Guid(fa36c1000f66b7946b2f581e1f730a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aee1dc691a8400a18d51963d2ab9f50a') in 0.0820655 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000124 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/playground-15.png
-  artifactKey: Guid(7f10afd7e5ab4bc49a14777ba3555195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/playground-15.png using Guid(7f10afd7e5ab4bc49a14777ba3555195) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '431f84ebc6777ec0919a4937af750629') in 0.0963848 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/LUTE/EditorResources/Textures/order_background.png
-  artifactKey: Guid(3cff51493cd05b345bc696cfdd4ff830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/EditorResources/Textures/order_background.png using Guid(3cff51493cd05b345bc696cfdd4ff830) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3db8d00727c0809009957b4197e71ea7') in 0.0791122 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square/monkey.png
-  artifactKey: Guid(c329ec9dc0859d04c8ace4fa6c251e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square/monkey.png using Guid(c329ec9dc0859d04c8ace4fa6c251e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '16a659b50968dee1769f9b3493c08529') in 0.2186652 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000292 seconds.
-  path: Assets/LUTE/ThirdPartyAssets/InventoryEngine/MMTools/MMDebugOnScreen/Sprites/MMLogo16x16.png
-  artifactKey: Guid(0a9d566b902c9a84087bf3ca3a178e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/ThirdPartyAssets/InventoryEngine/MMTools/MMDebugOnScreen/Sprites/MMLogo16x16.png using Guid(0a9d566b902c9a84087bf3ca3a178e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a0fcf66e82911fef8afbf3c32d6fe11f') in 0.0795942 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.108228 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Textures/mapbox-logo-white.png
-  artifactKey: Guid(fa730453dea644416a34148b2e436e78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Textures/mapbox-logo-white.png using Guid(fa730453dea644416a34148b2e436e78) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c95ffe77517600d83b0d615d275707e') in 0.2046188 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.052895 seconds.
-  path: Assets/LUTE/EditorResources/Logos/logaLogoSquare.jpg
-  artifactKey: Guid(dcf4ea5e55e089143be5e82cc90adc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/EditorResources/Logos/logaLogoSquare.jpg using Guid(dcf4ea5e55e089143be5e82cc90adc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd6ceb4ecd37f5f232ef5a1b3fcdd3f02') in 0.2696217 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004823 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/UI/LUTE-logos_transparent.png
-  artifactKey: Guid(3d69bf4b1f575644db3fcca0cb5c60f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/UI/LUTE-logos_transparent.png using Guid(3d69bf4b1f575644db3fcca0cb5c60f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c2c2452b99c7cd24625d1e8ca161d154') in 0.0653769 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.009384 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round (outline)/monkey.png
-  artifactKey: Guid(fe752b636c0656c40b4ee85a814e0053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round (outline)/monkey.png using Guid(fe752b636c0656c40b4ee85a814e0053) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ec5c4adedb65812e41d4c5aea7098c6b') in 0.0770412 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.013938 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square without details/panda.png
-  artifactKey: Guid(d98cc5acb48ab4b46ac8bc38756bab2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square without details/panda.png using Guid(d98cc5acb48ab4b46ac8bc38756bab2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8add9eda4027389084b836c6b40482c5') in 0.0942168 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.009782 seconds.
-  path: Assets/LUTE/EditorResources/Logos/logaLogo.png
-  artifactKey: Guid(ccc44370056c7b546b898b18f649fa12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/EditorResources/Logos/logaLogo.png using Guid(ccc44370056c7b546b898b18f649fa12) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fff32052615d3f5db1ed9feae0f23fb0') in 0.0649948 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.012980 seconds.
-  path: Assets/LUTE/Resources/Textures/lockWhite.png
-  artifactKey: Guid(88634c0f1f6ec684bbe6d58c16c7b1e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/Resources/Textures/lockWhite.png using Guid(88634c0f1f6ec684bbe6d58c16c7b1e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0471299a790d13d6b2714cc9c4e77b77') in 0.069675 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002945 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/lodging-15.png
-  artifactKey: Guid(00f79eb9a8a2ba04baee091552d5a7f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/lodging-15.png using Guid(00f79eb9a8a2ba04baee091552d5a7f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '48071699be8e14b2228af5a07ffe3db8') in 0.072051 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000950 seconds.
-  path: Assets/LUTE/ThirdPartyAssets/XR/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/DemoSceneAssets/Sprites/LegibilityMask.png
-  artifactKey: Guid(e1231703718185747aed268b83936195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/ThirdPartyAssets/XR/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/DemoSceneAssets/Sprites/LegibilityMask.png using Guid(e1231703718185747aed268b83936195) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b84fa15ee063e0290a0c3b5a71c69889') in 0.0631119 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004870 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square without details (outline)/penguin.png
-  artifactKey: Guid(84dbffa519ef9934093284e5329e0571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square without details (outline)/penguin.png using Guid(84dbffa519ef9934093284e5329e0571) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e8db464da98ad0d6eaad0cb5da1b57a6') in 0.080284 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001199 seconds.
-  path: Assets/LUTE/ThirdPartyAssets/InventoryEngine/Sprites/KoalaItems.png
-  artifactKey: Guid(9f715bc4891bb784183c52b2efb402fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/ThirdPartyAssets/InventoryEngine/Sprites/KoalaItems.png using Guid(9f715bc4891bb784183c52b2efb402fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '10d5957b21dc6ddf672ea4e061f8247f') in 0.4385812 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.006040 seconds.
+  Time since last request: 0.159322 seconds.
   path: Assets/LoGa Game 2/Resources/2D/LogoV1.png
   artifactKey: Guid(82d07f5b8836823458a21213ad37c648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LoGa Game 2/Resources/2D/LogoV1.png using Guid(82d07f5b8836823458a21213ad37c648) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5d08f50d10e997b12b3abdf74d679835') in 0.0698682 seconds
+Start importing Assets/LoGa Game 2/Resources/2D/LogoV1.png using Guid(82d07f5b8836823458a21213ad37c648) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '39aca17d94b97948d3ce38218aa1cc03') in 0.0222574 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000479 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/monument-15.png
-  artifactKey: Guid(d5f811a06bace804ea9ca2920bb9c765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/monument-15.png using Guid(d5f811a06bace804ea9ca2920bb9c765) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ebbb713fb7cca139a9ff8368bd819f8a') in 0.1176123 seconds
+  Time since last request: 0.165147 seconds.
+  path: Assets/LoGa Game 2/Resources/2D/LogoV2.png
+  artifactKey: Guid(34e2fa312bf42e44aa9f180a4d517a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D/LogoV2.png using Guid(34e2fa312bf42e44aa9f180a4d517a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '17925f8d24bd22f39dbc56f0ca9fdcc6') in 0.0199752 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001719 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/UI/LUTEBanner.png
-  artifactKey: Guid(9a88e128bf7b54448ad5a753020aa396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/UI/LUTEBanner.png using Guid(9a88e128bf7b54448ad5a753020aa396) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8216c760fe7c6884fac2b23eb96ba576') in 0.0599955 seconds
+  Time since last request: 0.359040 seconds.
+  path: Assets/LoGa Game 2/Resources/2D/ScrollingBackground.png
+  artifactKey: Guid(dc47b4b92b2252446a8ae17d3bd6c185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D/ScrollingBackground.png using Guid(dc47b4b92b2252446a8ae17d3bd6c185) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7993eae4ffb8c0c8f3ba18b160a1aabe') in 0.0197837 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000709 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Resources/Mapbox/PrefabScreens/Location-basedGame.gif
-  artifactKey: Guid(b9da555a2df00402d86244517dae835a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Resources/Mapbox/PrefabScreens/Location-basedGame.gif using Guid(b9da555a2df00402d86244517dae835a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ead5e0acae83a37d124df384958545fd') in 0.076234 seconds
+  Time since last request: 0.285928 seconds.
+  path: Assets/LoGa Game 2/Resources/2D/Sign.png
+  artifactKey: Guid(8389460e4d8d51747927851dbd37e7d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D/Sign.png using Guid(8389460e4d8d51747927851dbd37e7d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8f133f6d5e7e58041932bdabd20e3bc8') in 0.0256791 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/LUTE/EditorResources/Icons/maximise.png
-  artifactKey: Guid(b1bd6a7c76746b54e829f1839619f769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/EditorResources/Icons/maximise.png using Guid(b1bd6a7c76746b54e829f1839619f769) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3395ee0a45362a17454cabc23b25afe7') in 0.0523332 seconds
+  Time since last request: 0.346941 seconds.
+  path: Assets/LoGa Game 2/Resources/2D/SmallStonePanel_Ropes.png
+  artifactKey: Guid(3bb7cab9057181541924acd863e843b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D/SmallStonePanel_Ropes.png using Guid(3bb7cab9057181541924acd863e843b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '943c62e3fbec42d26dec3f5a193f1e10') in 0.0264976 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000480 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round without details/monkey.png
-  artifactKey: Guid(a74eef1edffb3704593b56a82ecb1d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round without details/monkey.png using Guid(a74eef1edffb3704593b56a82ecb1d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0a3992cc6f68da7245065e36d810b798') in 0.063692 seconds
+  Time since last request: 0.381552 seconds.
+  path: Assets/LoGa Game 2/Resources/2D/SmallStonePanel_Vines.png
+  artifactKey: Guid(6932f40c16493b7489da37579eefc5a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D/SmallStonePanel_Vines.png using Guid(6932f40c16493b7489da37579eefc5a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6b3b157344d914f38c6f74494392bb61') in 0.0214254 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001636 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round/penguin.png
-  artifactKey: Guid(e0d4f590142c34846b3ec2c251042644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round/penguin.png using Guid(e0d4f590142c34846b3ec2c251042644) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd4736deb9cdc08933c63e06f9bdc3d79') in 0.0761746 seconds
+  Time since last request: 0.857131 seconds.
+  path: Assets/LoGa Game 2/Resources/2D/StoneHexagon.png
+  artifactKey: Guid(52b89b3765da8cc43a699c8a16b2351d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D/StoneHexagon.png using Guid(52b89b3765da8cc43a699c8a16b2351d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f2c8ee6a0339afdea49c558dc9f32825') in 0.0228048 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000397 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/UI/mapIcon.png
-  artifactKey: Guid(65c36c23b8dc49e4d8d11e6cfc15403d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/UI/mapIcon.png using Guid(65c36c23b8dc49e4d8d11e6cfc15403d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9c1b9ecc8b6d1130e430c6b3392113b8') in 0.051302 seconds
+  Time since last request: 0.522976 seconds.
+  path: Assets/LoGa Game 2/Resources/2D/StoneLabel.png
+  artifactKey: Guid(f533286843f1e3141ae45ad3fe2d58df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D/StoneLabel.png using Guid(f533286843f1e3141ae45ad3fe2d58df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a7600049c61aaf490fc2460aaccbd767') in 0.0197655 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001302 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/UI/LUTE-logos_transparent 2.png
-  artifactKey: Guid(b98c970f92254504389034704fadcc4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/UI/LUTE-logos_transparent 2.png using Guid(b98c970f92254504389034704fadcc4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '86cc36667093614ce530f1f95035205c') in 0.119178 seconds
+  Time since last request: 113.931867 seconds.
+  path: Assets/LoGa Game 2/Resources/2D/SmallStonePanel_Vines.png
+  artifactKey: Guid(6932f40c16493b7489da37579eefc5a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D/SmallStonePanel_Vines.png using Guid(6932f40c16493b7489da37579eefc5a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e93b251b51aa0036e138177a56b67d99') in 0.0222798 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/LUTE/Resources/Textures/SaveSystem/Colour/loadColour.png
-  artifactKey: Guid(958a25b67944bcb47b35ce5a7f90dbb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/Resources/Textures/SaveSystem/Colour/loadColour.png using Guid(958a25b67944bcb47b35ce5a7f90dbb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1a0b9c85cd4d28c58fd442cc207c17bb') in 0.2169439 seconds
+  Time since last request: 35.208131 seconds.
+  path: Assets/LoGa Game 2/Resources/2D/SmallStonePanel_Vines.png
+  artifactKey: Guid(6932f40c16493b7489da37579eefc5a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D/SmallStonePanel_Vines.png using Guid(6932f40c16493b7489da37579eefc5a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '70336299e573f7c4a564c9828ba51792') in 0.0207192 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.003099 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/industry-15.png
-  artifactKey: Guid(dd7dd9c1baecd44419d86a91f50533e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/industry-15.png using Guid(dd7dd9c1baecd44419d86a91f50533e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '03482f570a835707bfa2f37923370060') in 0.3136951 seconds
+  Time since last request: 16.262034 seconds.
+  path: Assets/LoGa Game 2/Resources/2D/Sign.png
+  artifactKey: Guid(8389460e4d8d51747927851dbd37e7d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D/Sign.png using Guid(8389460e4d8d51747927851dbd37e7d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a91d73d4ee958749931e59fb7643c45c') in 0.0227975 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000072 seconds.
-  path: Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Resources/UI/img_locationpanel_innercircle.png
-  artifactKey: Guid(1b16ff30abf92b04c88a5de69ea0f0c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Resources/UI/img_locationpanel_innercircle.png using Guid(1b16ff30abf92b04c88a5de69ea0f0c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '81c4d7c053f79438968106b6bfee57e3') in 0.2253282 seconds
+  Time since last request: 9.645628 seconds.
+  path: Assets/LoGa Game 2/Resources/2D/Sign.png
+  artifactKey: Guid(8389460e4d8d51747927851dbd37e7d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D/Sign.png using Guid(8389460e4d8d51747927851dbd37e7d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f8a3e73bf629444c52181497fc311dca') in 0.0819624 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.032061 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/parking-15.png
-  artifactKey: Guid(1209017340b51ee40aed0e7a2eebaa8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/parking-15.png using Guid(1209017340b51ee40aed0e7a2eebaa8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6281d94a4ce8cfaa6c3f88237c1152a6') in 0.0868306 seconds
+  Time since last request: 107.408727 seconds.
+  path: Assets/LoGa Game 2/Resources/2D/Sign.png
+  artifactKey: Guid(8389460e4d8d51747927851dbd37e7d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D/Sign.png using Guid(8389460e4d8d51747927851dbd37e7d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5c609d11df7a57134ffc7d2a04e41ae2') in 0.0219426 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000374 seconds.
-  path: Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Resources/UI/img_locationpanel_barberstone.png
-  artifactKey: Guid(7d5c8123e10f2bb45af17fd97a0163e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Resources/UI/img_locationpanel_barberstone.png using Guid(7d5c8123e10f2bb45af17fd97a0163e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b1094f40f30bc5d54296a1574fb4575b') in 0.0891447 seconds
+  Time since last request: 158.806264 seconds.
+  path: Assets/LoGa Game 2/Resources/2D/LargeStonePanel.png
+  artifactKey: Guid(72109559b701eec41a72ab8d9c87ebed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D/LargeStonePanel.png using Guid(72109559b701eec41a72ab8d9c87ebed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'af5e11be06b09d9f08f0e0022b030285') in 0.0262664 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000481 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/UI/Inventory/Icons.png
-  artifactKey: Guid(075289b53d2214247aaee342cc134414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/UI/Inventory/Icons.png using Guid(075289b53d2214247aaee342cc134414) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bb10274ef3440560ff0937d319d18813') in 0.4211807 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000085 seconds.
-  path: Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Resources/UI/img_locationpanel_obelisk.png
-  artifactKey: Guid(9a0241ed2963f1b46a3b822b04ca82ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Resources/UI/img_locationpanel_obelisk.png using Guid(9a0241ed2963f1b46a3b822b04ca82ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '94828e135e618861c32ebf6cb8f563dc') in 0.1281179 seconds
+  Time since last request: 30.248892 seconds.
+  path: Assets/LoGa Game 2/Resources/2D/LargeStonePanel.png
+  artifactKey: Guid(72109559b701eec41a72ab8d9c87ebed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D/LargeStonePanel.png using Guid(72109559b701eec41a72ab8d9c87ebed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51a9a12efcc3ad40d816e184ba334537') in 0.1224739 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002312 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/3_POIPlacement/Resources/poi-icon-food.png
-  artifactKey: Guid(b9cd915d8be92437c936b03eedf3631c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/3_POIPlacement/Resources/poi-icon-food.png using Guid(b9cd915d8be92437c936b03eedf3631c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ef3b72a03bc60e433fac8fb2c80a44ee') in 0.0821352 seconds
+  Time since last request: 413.724012 seconds.
+  path: Assets/LoGa Game 2/Resources/2D/ArrowRight.png
+  artifactKey: Guid(490c856863f2cf648937c5e0b9d935ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D/ArrowRight.png using Guid(490c856863f2cf648937c5e0b9d935ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3a1e03d35b1adf7f30636dca3e879eae') in 0.0333729 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/pharmacy-15.png
-  artifactKey: Guid(50167a422193d5546ba8c8163c00072e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/pharmacy-15.png using Guid(50167a422193d5546ba8c8163c00072e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9e33d3ce53c58ea272339d4d0f0f8b31') in 0.066115 seconds
+  Time since last request: 0.718510 seconds.
+  path: Assets/LoGa Game 2/Resources/2D/ArrowLeft.png
+  artifactKey: Guid(e16ea9633a2ca0940a723228ea68d4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D/ArrowLeft.png using Guid(e16ea9633a2ca0940a723228ea68d4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '06866ca9f3c8941806143f8a76f92738') in 0.0277567 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000576 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round without details/parrot.png
-  artifactKey: Guid(84486a0d8fc7014458926150bc573b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round without details/parrot.png using Guid(84486a0d8fc7014458926150bc573b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e26f206e0189d70b2f0de9294a164167') in 0.0730646 seconds
+  Time since last request: 12.862679 seconds.
+  path: Assets/LoGa Game 2/Resources/2D
+  artifactKey: Guid(bdb620eff40063140a63022e77d1e8d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D using Guid(bdb620eff40063140a63022e77d1e8d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8668725186e8728d34c497268153ba4d') in 0.0006037 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 122.815920 seconds.
+  path: Assets/LoGa Game 2/Resources/2D/Ancient UI Inventory Display.png
+  artifactKey: Guid(7be92b87a00dc1b4c9ff1df760cc955c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Resources/2D/Ancient UI Inventory Display.png using Guid(7be92b87a00dc1b4c9ff1df760cc955c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '75b531bfa11caefdf3538af83c83d649') in 0.0426817 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000094 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round without details/penguin.png
-  artifactKey: Guid(9bea832e3f60b1940a1f336896699b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round without details/penguin.png using Guid(9bea832e3f60b1940a1f336896699b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bbc94ea10a46e2d627331176805f6669') in 0.1122123 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 557.297464 seconds.
+  path: Assets/LoGa Game 2/Prefabs/PF_HuntSelection.prefab
+  artifactKey: Guid(2ad40661ee027944db6d0a2a5e6b8262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Prefabs/PF_HuntSelection.prefab using Guid(2ad40661ee027944db6d0a2a5e6b8262) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '557666c33e71fedc4b8c389da386fe04') in 0.0201332 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 37
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/LUTE/EditorResources/Icons/keyIcon.png
-  artifactKey: Guid(aca340d27314d67499bdad157510b480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/EditorResources/Icons/keyIcon.png using Guid(aca340d27314d67499bdad157510b480) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'df9030b0aeb1823e86d45f6a4efe4549') in 0.0550037 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 213.994343 seconds.
+  path: Assets/LoGa Game 2/Prefabs/PF_HuntSelection.prefab
+  artifactKey: Guid(2ad40661ee027944db6d0a2a5e6b8262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LoGa Game 2/Prefabs/PF_HuntSelection.prefab using Guid(2ad40661ee027944db6d0a2a5e6b8262) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '076d6c53924ad1adcc1c4fc76d17f4fe') in 0.0173097 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 37
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/UI/icon_settings.png
-  artifactKey: Guid(bf01c73da455bc446be28c24cf1b3ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/UI/icon_settings.png using Guid(bf01c73da455bc446be28c24cf1b3ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b65c94ae54fc3969125c6540209e0341') in 0.0741554 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.857 seconds
+Script 'VideoPlayer' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+Refreshing native plugins compatible for Editor in 4.37 ms, found 6 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.TypeInitializationException: The type initializer for 'UnityEditor.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor.ARStarterAssetsSampleProjectValidation' threw an exception. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.CoreUtils.Editor.PackageVersionUtility.UpdatePackageVersions () [0x00034] in .\Library\PackageCache\com.unity.xr.core-utils\Editor\ProjectValidation\PackageVersionUtility.cs:46 
+  at Unity.XR.CoreUtils.Editor.PackageVersionUtility.GetPackageVersion (System.String packageName) [0x00011] in .\Library\PackageCache\com.unity.xr.core-utils\Editor\ProjectValidation\PackageVersionUtility.cs:67 
+  at UnityEditor.XR.Interaction.Toolkit.Samples.ARStarterAssets.Editor.ARStarterAssetsSampleProjectValidation..cctor () [0x00032] in C:\Users\aaron.hawke\Desktop\AH_LoGaGame2\Assets\LUTE\ThirdPartyAssets\XR\Samples\XR Interaction Toolkit\3.0.7\AR Starter Assets\Editor\Scripts\ARStarterAssetsSampleProjectValidation.cs:32 
+   --- End of inner exception stack trace ---
+  at (wrapper managed-to-native) System.Object.__icall_wrapper_mono_gc_wbarrier_generic_nostore_internal(intptr)
+  at (wrapper write-barrier) System.Object.wbarrier_conc(intptr)
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <ed969b0e627d471da4848289f9c322df>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <ed969b0e627d471da4848289f9c322df>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <ed969b0e627d471da4848289f9c322df>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00056] in <20f98a04ac634cc8bf5f95425bb19bb9>:0 
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/UI/icon_inventory.png
-  artifactKey: Guid(53d730aba6cc75a448e5094c794b80bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/UI/icon_inventory.png using Guid(53d730aba6cc75a448e5094c794b80bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '907f67872063f11d94dda6923b804961') in 0.058402 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.406 seconds
+Domain Reload Profiling: 3266ms
+	BeginReloadAssembly (625ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (100ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (234ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (1129ms)
+		LoadAssemblies (918ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (390ms)
+			TypeCache.Refresh (35ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (328ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1407ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1179ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (109ms)
+			ProcessInitializeOnLoadAttributes (936ms)
+			ProcessInitializeOnLoadMethodAttributes (101ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 7.85 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 50 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 8538 unused Assets / (10.5 MB). Loaded Objects now: 9058.
+Memory consumption went from 196.0 MB to 185.5 MB.
+Total: 17.713100 ms (FindLiveObjects: 1.061300 ms CreateObjectMapping: 0.962400 ms MarkObjects: 6.211100 ms  DeleteObjects: 9.476800 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/UI/icon_achievements.png
-  artifactKey: Guid(4f8bf5b672858b447801748c33406026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/UI/icon_achievements.png using Guid(4f8bf5b672858b447801748c33406026) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6bdf2c96f1dd71ea3084da78164e3804') in 0.0839572 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000726 seconds.
-  path: Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/UI/icon_unknownitem.png
-  artifactKey: Guid(3323502711fafdb479ee6c6ed5423df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/UI/icon_unknownitem.png using Guid(3323502711fafdb479ee6c6ed5423df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cae9fc074affafc80bf1109fcfb10e34') in 0.1013664 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000690 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square (outline)/monkey.png
-  artifactKey: Guid(9e649e6c9fad5004cb569d4d399f5a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square (outline)/monkey.png using Guid(9e649e6c9fad5004cb569d4d399f5a0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1895e69f79987798bee9ee1d9a18d70d') in 0.0849535 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003185 seconds.
-  path: Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/UI/icon_achievement_1.png
-  artifactKey: Guid(f8bf1f1e51308a448ac372235d8d9d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/UI/icon_achievement_1.png using Guid(f8bf1f1e51308a448ac372235d8d9d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '37e17e96268de48f61661a1bc361dc35') in 0.058852 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000181 seconds.
-  path: Assets/LUTE/ThirdPartyAssets/XR/Samples/XR Interaction Toolkit/3.0.7/AR Starter Assets/ARDemoSceneAssets/Sprites/Icon - Object - Pyramid.png
-  artifactKey: Guid(d0b959f29ab48ab44a419b0718057273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/ThirdPartyAssets/XR/Samples/XR Interaction Toolkit/3.0.7/AR Starter Assets/ARDemoSceneAssets/Sprites/Icon - Object - Pyramid.png using Guid(d0b959f29ab48ab44a419b0718057273) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '01b4fcf7730ccd47db993d2cae59f774') in 0.1113106 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000585 seconds.
-  path: Assets/LUTE/ThirdPartyAssets/XR/Samples/XR Interaction Toolkit/3.0.7/AR Starter Assets/ARDemoSceneAssets/Sprites/Icon - Object - Wedge.png
-  artifactKey: Guid(bec4cafaf2554154a9a59d99e6f973e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/ThirdPartyAssets/XR/Samples/XR Interaction Toolkit/3.0.7/AR Starter Assets/ARDemoSceneAssets/Sprites/Icon - Object - Wedge.png using Guid(bec4cafaf2554154a9a59d99e6f973e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1869c3f2603b4f9c6f5347197b320828') in 0.1262452 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005874 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square (outline)/hippo.png
-  artifactKey: Guid(1e63132055146144a8b582185fcd731f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square (outline)/hippo.png using Guid(1e63132055146144a8b582185fcd731f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3310582a05f4d8a9f75c27b3590baf27') in 0.0563602 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001548 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/heart-15.png
-  artifactKey: Guid(818198d6da1f6d84db65f5dad172eeb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/heart-15.png using Guid(818198d6da1f6d84db65f5dad172eeb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '84846965440cbbadc39a8ea1f0eb38d6') in 0.066918 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000781 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square without details/hippo.png
-  artifactKey: Guid(8ccc29c2a8bcb6d43950ee83fcb52cb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square without details/hippo.png using Guid(8ccc29c2a8bcb6d43950ee83fcb52cb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '57af4d8182feeaab5fbdc42bee1c360b') in 0.0765363 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000592 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/golf-15.png
-  artifactKey: Guid(044a933bd37f21548b2dc707d4295a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/golf-15.png using Guid(044a933bd37f21548b2dc707d4295a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '299dea707173371e32528872d03f4e48') in 0.06754 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005183 seconds.
-  path: Assets/LUTE/ThirdPartyAssets/XR/Samples/XR Interaction Toolkit/3.0.7/AR Starter Assets/ARDemoSceneAssets/Sprites/Icon - Object - Cylinder.png
-  artifactKey: Guid(6f0535af87e5386429ccc6ff02bd7131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/ThirdPartyAssets/XR/Samples/XR Interaction Toolkit/3.0.7/AR Starter Assets/ARDemoSceneAssets/Sprites/Icon - Object - Cylinder.png using Guid(6f0535af87e5386429ccc6ff02bd7131) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '38dd0f09fb46c3aa193b3e9c54393ab7') in 0.094975 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.010563 seconds.
-  path: Assets/LUTE/ThirdPartyAssets/XR/Samples/XR Interaction Toolkit/3.0.7/AR Starter Assets/ARDemoSceneAssets/Sprites/Icon - Object - Rounded Cube.png
-  artifactKey: Guid(a3018c2958fa811408e9be2182918a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/ThirdPartyAssets/XR/Samples/XR Interaction Toolkit/3.0.7/AR Starter Assets/ARDemoSceneAssets/Sprites/Icon - Object - Rounded Cube.png using Guid(a3018c2958fa811408e9be2182918a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '73f7bc710d197f949864f5511b9a527e') in 0.104323 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.102182 seconds.
-  path: Assets/LUTE/ThirdPartyAssets/XR/Samples/XR Interaction Toolkit/3.0.7/AR Starter Assets/ARDemoSceneAssets/Sprites/Icon - Create.png
-  artifactKey: Guid(34cefb43251d3ce4683c9636ab3e176b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/ThirdPartyAssets/XR/Samples/XR Interaction Toolkit/3.0.7/AR Starter Assets/ARDemoSceneAssets/Sprites/Icon - Create.png using Guid(34cefb43251d3ce4683c9636ab3e176b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '92cf83e52480f1e6f60f2a9312b6f4a0') in 0.0880258 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.025869 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square (outline)/giraffe.png
-  artifactKey: Guid(7ab96e15e1de6914cbf4a1aea1f02908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square (outline)/giraffe.png using Guid(7ab96e15e1de6914cbf4a1aea1f02908) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd976ddca7e5d2ba36c372be9e6df9656') in 0.0671791 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.008505 seconds.
-  path: Assets/LUTE/ThirdPartyAssets/LeanTween/Examples/Material/Futoro_PersonSprites.png
-  artifactKey: Guid(1201c14bb4ee74d8e99e56dc4f3f4fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/ThirdPartyAssets/LeanTween/Examples/Material/Futoro_PersonSprites.png using Guid(1201c14bb4ee74d8e99e56dc4f3f4fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f8f7e53e5b77b7f4bba860aa9ada64d') in 0.2573002 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.030534 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round (outline)/giraffe.png
-  artifactKey: Guid(6886312ba6ed6174c95a309801462a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round (outline)/giraffe.png using Guid(6886312ba6ed6174c95a309801462a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cb84dd0db8aa53b3e03d33b4db4dde9f') in 0.0862821 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.014298 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round without details/elephant.png
-  artifactKey: Guid(1e3b668077ec5d74e8b4f627153a8d32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round without details/elephant.png using Guid(1e3b668077ec5d74e8b4f627153a8d32) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76fed3d265fa4b400cbe055d3d38615c') in 0.1160068 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.007229 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/Frame.png
-  artifactKey: Guid(08b4886c5f0c3ff44b22f58629865352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/Frame.png using Guid(08b4886c5f0c3ff44b22f58629865352) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '35842ed966774f97d30f4b88acee7e50') in 0.0789156 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round/elephant.png
-  artifactKey: Guid(ca005e5c0784a194bbbb435b940b27a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round/elephant.png using Guid(ca005e5c0784a194bbbb435b940b27a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bcb49d633c05994b943feb88b79fbecf') in 0.1313456 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003036 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/fast-food-15.png
-  artifactKey: Guid(428a955abb5203f4f8c78214fb11318d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/fast-food-15.png using Guid(428a955abb5203f4f8c78214fb11318d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e72bfd61158736482dfd604eb875469b') in 0.2103961 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000242 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/farm-15.png
-  artifactKey: Guid(2991a81e7fd67224fabdcab9cb8290e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/farm-15.png using Guid(2991a81e7fd67224fabdcab9cb8290e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d0ad6d0594f6f24d48e4d37504c6a09') in 0.0760773 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000072 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round without details (outline)/giraffe.png
-  artifactKey: Guid(efe6901be0ab20f4cb9c5194c8661d9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Round without details (outline)/giraffe.png using Guid(efe6901be0ab20f4cb9c5194c8661d9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7cedb0d1d61ad045f6213553acb8cd02') in 0.3159566 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001077 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square/giraffe.png
-  artifactKey: Guid(7dd7153404973224c8a41b62eecc7a34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/CharacterHeads/Animals/Square/giraffe.png using Guid(7dd7153404973224c8a41b62eecc7a34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '163721cdc15cbca9c6216db68f8af779') in 0.0712961 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000537 seconds.
-  path: Assets/LUTE/ThirdPartyAssets/LeanTween/Examples/Material/Futuro_SineWave.psd
-  artifactKey: Guid(d835741a3c4a14a0aa5f7536c46456c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/ThirdPartyAssets/LeanTween/Examples/Material/Futuro_SineWave.psd using Guid(d835741a3c4a14a0aa5f7536c46456c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2ef5c1c805f72bf1731a6c5e93af51f8') in 0.0697371 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001053 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/gift-15.png
-  artifactKey: Guid(c74f7947d1ae4e94687ce96d20f13911) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/gift-15.png using Guid(c74f7947d1ae4e94687ce96d20f13911) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2949dae484f107cf0fe40ece5c26ac41') in 0.0631048 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/UI/icon_achievement_4.png
-  artifactKey: Guid(3ac4deb21cc575543bb2ffc56f593398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/UI/icon_achievement_4.png using Guid(3ac4deb21cc575543bb2ffc56f593398) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1ccbd3665da6270a4985872ff4e44d1d') in 0.0735382 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002747 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/harbor-15.png
-  artifactKey: Guid(296d283c62a405146aaccf32d610de63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/harbor-15.png using Guid(296d283c62a405146aaccf32d610de63) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '29e237bdb56f2838deb8bd829409643b') in 0.0578314 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/UI/icon_achievement_2.png
-  artifactKey: Guid(d4d566f7f88ec614bb1c8b73ea773880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/UI/icon_achievement_2.png using Guid(d4d566f7f88ec614bb1c8b73ea773880) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aa8db234171548652d49cdc6681d58e2') in 0.0635678 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/UI/icon_achievement_3.png
-  artifactKey: Guid(96b20197b12599541a030bd1a80d41ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/UI/icon_achievement_3.png using Guid(96b20197b12599541a030bd1a80d41ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f77cc57e9d0f6ce9e249aafad5aff241') in 0.0813203 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000599 seconds.
-  path: Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/UI/icon_achievement_5.png
-  artifactKey: Guid(8676c99d85b215447ae54c7a7b3e6ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Scenes/Games/DesignerCreated/Testing/AlbertoDemo/Sprites/Icons/UI/icon_achievement_5.png using Guid(8676c99d85b215447ae54c7a7b3e6ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e519fb79193c0b4f26bcc31b77e48444') in 0.0653118 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/lighthouse-15.png
-  artifactKey: Guid(60c5cc0d372cc6440bdf62f8450e4c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/lighthouse-15.png using Guid(60c5cc0d372cc6440bdf62f8450e4c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6c07cc0703f6d352061473786972b6d2') in 0.0968811 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/3_POIPlacement/Resources/poi-icon-transportation.png
-  artifactKey: Guid(fec5572521f52453397f564f556c168e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/3_POIPlacement/Resources/poi-icon-transportation.png using Guid(fec5572521f52453397f564f556c168e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c4865c11437f29c0a1cfa9a551a247c9') in 0.0740342 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/prison-15.png
-  artifactKey: Guid(206aeb4e19e242545817b0c560f5d1f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/prison-15.png using Guid(206aeb4e19e242545817b0c560f5d1f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9bc71137e913919f2ecce8d2f3ee265f') in 0.0457506 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.130651 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/UI/Inventory/Ancient/Ancient UI Inventory Button.png
-  artifactKey: Guid(ef5de45fb9f610f4f94a5661b0a6fa7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/UI/Inventory/Ancient/Ancient UI Inventory Button.png using Guid(ef5de45fb9f610f4f94a5661b0a6fa7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '306bf313571b21929173dc70efb84cfa') in 0.1264858 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000288 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/UI/Inventory/Ancient/Ancient UI Inventory Display Border.png
-  artifactKey: Guid(780f00799eeb684448ceeeb0039f58e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/UI/Inventory/Ancient/Ancient UI Inventory Display Border.png using Guid(780f00799eeb684448ceeeb0039f58e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '07ba51f7b4b0c4b72dbac37ebbba15ed') in 0.1030372 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.013785 seconds.
-  path: Assets/LUTE_Starter Scenes/Sprites/UI/Inventory/Ancient/Ancient UI Inventory Display Window.png
-  artifactKey: Guid(85e850b7075edae4b852abcdd619dd86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Sprites/UI/Inventory/Ancient/Ancient UI Inventory Display Window.png using Guid(85e850b7075edae4b852abcdd619dd86) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b871c61cb2a4c25ef969c5a9714ef68c') in 0.1213781 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.165830 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/aerialway-15.png
-  artifactKey: Guid(c80c2e2443adb6d478363a64f4adfb6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/aerialway-15.png using Guid(c80c2e2443adb6d478363a64f4adfb6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a9fa89634234d3c8ffbf4c1e4f48f923') in 0.0865735 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000620 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/alcohol-shop-15.png
-  artifactKey: Guid(df4b49bce9c77c44b95674e6c1249cfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/alcohol-shop-15.png using Guid(df4b49bce9c77c44b95674e6c1249cfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b77f85df2b980506b77309724254bd04') in 0.1310172 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/LoGa Game 2/Resources/2D/Ancient Border.png
-  artifactKey: Guid(6ab82c9eb0db0d84e991186cdb86b4cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LoGa Game 2/Resources/2D/Ancient Border.png using Guid(6ab82c9eb0db0d84e991186cdb86b4cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f99832c2b2da1c0c38a78734a2ee830c') in 0.0587047 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.449412 seconds.
-  path: Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/baseball-15.png
-  artifactKey: Guid(aedd248742c9f294eb06125e77817be0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE_Starter Scenes/Mapbox/Examples/Resources/maki/baseball-15.png using Guid(aedd248742c9f294eb06125e77817be0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3eceb3f946f19d4cbe1d90fa246a7d49') in 0.0428623 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.666530 seconds.
-  path: Assets/LUTE/Resources/Sprites/DungeonChest.png
-  artifactKey: Guid(c3eb904e61cd60b4d95701449f5276fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/Resources/Sprites/DungeonChest.png using Guid(c3eb904e61cd60b4d95701449f5276fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19bbc5460f303c1a10ca7b836b550028') in 0.0734254 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/LUTE/Resources/Textures/DialogBoxAncientSliced.png
-  artifactKey: Guid(6bcd139985a869544bf347a5a9eee1c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/Resources/Textures/DialogBoxAncientSliced.png using Guid(6bcd139985a869544bf347a5a9eee1c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9c5f83a27abd28da963f48b9fc5fa646') in 0.0817828 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 50.831537 seconds.
-  path: Assets/LUTE/ThirdPartyAssets/XR/Samples/XR Interaction Toolkit/3.0.7/AR Starter Assets/ARDemoSceneAssets/Sprites/Button - Rounded Radius - 4px.png
-  artifactKey: Guid(df12de0a7297cf24b9f43987f312fedd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LUTE/ThirdPartyAssets/XR/Samples/XR Interaction Toolkit/3.0.7/AR Starter Assets/ARDemoSceneAssets/Sprites/Button - Rounded Radius - 4px.png using Guid(df12de0a7297cf24b9f43987f312fedd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '03f771dd688b4c56335920ad460e1d73') in 0.0511661 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Prepare: number of updated asset objects reloaded= 0
