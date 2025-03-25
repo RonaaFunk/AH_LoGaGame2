@@ -10,11 +10,14 @@ public class NodeStartButton : EventHandler
 {
     [Tooltip("Wait for a number of frames before executing the node")]
 
-    [SerializeField] Button _button;
+    [SerializeField] Button[] buttons;
 
     void Start()
     {
-        _button.onClick.AddListener(OnClicked);
+        foreach (var _button in buttons)
+        {
+            _button.onClick.AddListener(OnClicked);
+        }
     }
 
     void OnClicked(){
