@@ -567,7 +567,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26156.725
     y: 24815.637
-    width: 111.19
+    width: 111.46
     height: 40
   nodeName: AEMarkers
   nodeDescription: spawn markers for adam and eve route if needed
@@ -634,7 +634,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26292.725
     y: 24796.637
-    width: 124.14
+    width: 125.11
     height: 40
   nodeName: AEWaypoints
   nodeDescription: Adam and Eve route
@@ -935,7 +935,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26161.725
     y: 24868.637
-    width: 112.43
+    width: 112.7
     height: 40
   nodeName: SHMarkers
   nodeDescription: spawn markers for silbury hill route if needed
@@ -972,7 +972,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26292.725
     y: 24868.637
-    width: 125.39
+    width: 126.35
     height: 40
   nodeName: SHWaypoints
   nodeDescription: Silbury Hill Route
@@ -986,7 +986,7 @@ MonoBehaviour:
   - {fileID: 505594574}
   - {fileID: 505594573}
   - {fileID: 505594572}
-  eventHandler: {fileID: 505594584}
+  eventHandler: {fileID: 0}
   isGrouped: 0
   groupIndex: -1
   repeatable: 1
@@ -1633,7 +1633,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26156.725
     y: 24923.637
-    width: 116.16
+    width: 116.43
     height: 40
   nodeName: WHMarkers
   nodeDescription: spawn markers for windmill hill route if needed
@@ -1668,9 +1668,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 26290.725
+    x: 26292.725
     y: 24948.637
-    width: 129.12
+    width: 130.08
     height: 40
   nodeName: WHWaypoints
   nodeDescription: Winmill Hill Circle Route
@@ -2019,7 +2019,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26439.725
     y: 24870.637
-    width: 74.75
+    width: 75.37
     height: 40
   nodeName: Wait
   nodeDescription: Allowing 2 seconds for the path to be drawn correctly
@@ -3261,20 +3261,6 @@ MonoBehaviour:
   saveKeyData:
     saveKeyRef: {fileID: 0}
     saveKeyVal: 
---- !u!114 &505594584
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 505594396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76d2916b1cf4a5b4391d968526553eec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentNode: {fileID: 505594489}
-  FireOn: 1
 --- !u!21 &663251952
 Material:
   serializedVersion: 8
@@ -3509,11 +3495,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 348119232951787683, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
       propertyPath: nodeRect.width
-      value: 127.55
+      value: 127.61
       objectReference: {fileID: 0}
     - target: {fileID: 830664824052957531, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
       propertyPath: nodeRect.width
-      value: 147.35
+      value: 147.45999
       objectReference: {fileID: 0}
     - target: {fileID: 2441088386621236996, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
       propertyPath: showDesc
@@ -3549,7 +3535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4303630939233821233, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
       propertyPath: nodeRect.width
-      value: 78.03
+      value: 77.62
       objectReference: {fileID: 0}
     - target: {fileID: 4303630939233821233, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
       propertyPath: orderList.Array.size
@@ -3573,7 +3559,7 @@ PrefabInstance:
       objectReference: {fileID: 505594415}
     - target: {fileID: 4657257208514892370, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
       propertyPath: nodeRect.width
-      value: 115.56
+      value: 115.8
       objectReference: {fileID: 0}
     - target: {fileID: 4806665123537749153, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
       propertyPath: storyText
@@ -3625,6 +3611,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8743389473436946330, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
+      propertyPath: scrollPos.x
+      value: -25697.725
+      objectReference: {fileID: 0}
+    - target: {fileID: 8743389473436946330, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
+      propertyPath: scrollPos.y
+      value: -24417.637
+      objectReference: {fileID: 0}
+    - target: {fileID: 8743389473436946330, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
       propertyPath: nodeViewHeight
       value: 280
       objectReference: {fileID: 0}
@@ -3666,7 +3660,7 @@ PrefabInstance:
       objectReference: {fileID: 505594457}
     - target: {fileID: 8743389473436946330, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
       propertyPath: selectedNodes.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8743389473436946330, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
       propertyPath: 'variables.Array.data[10]'
@@ -4252,9 +4246,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1159015562283511075, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
       insertIndex: -1
       addedObject: {fileID: 505594578}
-    - targetCorrespondingSourceObject: {fileID: 1159015562283511075, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 505594584}
   m_SourcePrefab: {fileID: 100100000, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
 --- !u!114 &807059332 stripped
 MonoBehaviour:

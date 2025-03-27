@@ -10,7 +10,7 @@ public class Character : MonoBehaviour, IComparer<Character>
     [SerializeField] protected Color nameColour = Color.white;
     [SerializeField] protected AudioClip characterSound;
     [SerializeField] protected List<Sprite> characterPortraits;
-    [SerializeField] protected Image characterRenderImage;
+    // [SerializeField] protected Image characterRenderImage;
     [SerializeField] protected FacingDirection facingDirection;
 
     protected PortraitState portraitState = new PortraitState();
@@ -36,7 +36,7 @@ public class Character : MonoBehaviour, IComparer<Character>
     public virtual Color NameColour { get { return nameColour; } }
     public virtual AudioClip SoundEffect { get { return characterSound; } }
     public virtual List<Sprite> Portraits { get { return characterPortraits; } }
-    public virtual Image renderImage { get { return characterRenderImage; } }
+    // public virtual Image renderImage { get { return characterRenderImage; } }
     public virtual FacingDirection FacingDirection { get { return facingDirection; } }
     public virtual Sprite ProfileSprite { get; set; }
     public virtual PortraitState State { get { return portraitState; } }
