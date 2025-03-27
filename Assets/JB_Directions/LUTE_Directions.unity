@@ -231,8 +231,8 @@ MonoBehaviour:
   characterNameColour:
     serializedVersion: 2
     rgba: 0
-  storyText: You can modify the look of the path on the 'LUTEDirections' object and
-    then update the material here also for colour and other material changes.
+  storyText: You can modify the look of the path on the 'LUTEDirections' (including
+    the mesh and the material).
   typingSpeed: 40
   extendPrevious: 0
   voiceOverClip: {fileID: 0}
@@ -3578,8 +3578,7 @@ PrefabInstance:
     - target: {fileID: 4806665123537749153, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
       propertyPath: storyText
       value: Hello and welcome to the directions demo! In this scene, we have created
-        multiple location variables and then can call specific Nodes to draw directions
-        between them!
+        multiple location variables...
       objectReference: {fileID: 0}
     - target: {fileID: 5375476576259629837, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
       propertyPath: m_LocalPosition.x
