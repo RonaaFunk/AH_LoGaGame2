@@ -556,7 +556,7 @@
             // We need to search for this and use the info on this object not the reference in the list
             //var infoObject = Resources.FindObjectsOfTypeAll<LUTELocationInfo>().FirstOrDefault(x => x.infoID == locationData.infoID);
 
-            var locationInfo = engine.GetComponents<LocationVariable>().FirstOrDefault(x => x.Value.infoID == locationData.infoID);
+            var locationInfo = engine.GetComponents<LocationVariable>().FirstOrDefault(x => x != null && x.Value != null && x.Value.infoID == locationData.infoID);
             LUTELocationInfo info = null;
 
             if (locationInfo != null)
