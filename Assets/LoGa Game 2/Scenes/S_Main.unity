@@ -6274,7 +6274,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 25409.844
     y: 23610.37
-    width: 114.51
+    width: 114.58
     height: 40
   nodeName: TitleScreen
   nodeDescription: Basic building block of a narrative engine
@@ -6381,7 +6381,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 25635.12
     y: 23089.436
-    width: 138.85
+    width: 140.28
     height: 40
   nodeName: XRTest_Camera
   nodeDescription: Basic building block of a narrative engine
@@ -6455,7 +6455,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 25441.2
     y: 22967.65
-    width: 121.16
+    width: 122.32
     height: 40
   nodeName: XRTest_Intro
   nodeDescription: Basic building block of a narrative engine
@@ -6542,7 +6542,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 25430.68
     y: 23212.871
-    width: 126.59
+    width: 128.23001
     height: 40
   nodeName: XRTest_Outro
   nodeDescription: Basic building block of a narrative engine
@@ -6895,7 +6895,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26449.963
     y: 22843.623
-    width: 117.54
+    width: 117.74
     height: 40
   nodeName: AurochHunt
   nodeDescription: Basic building block of a narrative engine
@@ -7020,7 +7020,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26184.15
     y: 23125.645
-    width: 116.28
+    width: 116.69
     height: 40
   nodeName: AurochIntro
   nodeDescription: Dialogue at start
@@ -7121,7 +7121,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26773.848
     y: 23016.38
-    width: 97.94
+    width: 98.14
     height: 40
   nodeName: Auroch3
   nodeDescription: End of chain
@@ -7198,7 +7198,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26772.662
     y: 22669.537
-    width: 95.4
+    width: 96.08
     height: 40
   nodeName: Auroch1
   nodeDescription: Home1
@@ -7300,7 +7300,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26861.488
     y: 22839.664
-    width: 97.56
+    width: 97.770004
     height: 40
   nodeName: Auroch2
   nodeDescription: Just showing how a node can be triggered using a location event
@@ -7746,7 +7746,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 25883.201
     y: 23291.152
-    width: 109.04
+    width: 108.9
     height: 40
   nodeName: HuntMenu
   nodeDescription: Basic building block of a narrative engine
@@ -9385,7 +9385,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26193.934
     y: 23753.904
-    width: 146.95999
+    width: 147.16
     height: 40
   nodeName: AurochCollection
   nodeDescription: Basic building block of a narrative engine
@@ -9595,7 +9595,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 25963.1
     y: 23206.4
-    width: 105.18
+    width: 105.04
     height: 40
   nodeName: HuntBack
   nodeDescription: Back Button Functionality
@@ -9680,7 +9680,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 25723.305
     y: 23545.482
-    width: 149.98999
+    width: 151.63
     height: 40
   nodeName: BackToMainMenu
   nodeDescription: Back Button Functionality
@@ -11127,7 +11127,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26185.842
     y: 22531.326
-    width: 74.75
+    width: 75.37
     height: 40
   nodeName: Wait
   nodeDescription: Allowing 2 seconds for the path to be drawn correctly
@@ -11392,7 +11392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directionsFactory: {fileID: 1711612367}
-  drawFromPlayer: 1
+  drawFromPlayer: 0
   meshModifier: {fileID: 0}
   meshMaterial: {fileID: 0}
   locationVariables:
@@ -11450,7 +11450,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 25990.996
     y: 22617.158
-    width: 129.12
+    width: 130.08
     height: 40
   nodeName: WHWaypoints
   nodeDescription: Winmill Hill Circle Route
@@ -11538,7 +11538,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 25771.166
     y: 22613.25
-    width: 116.16
+    width: 116.43
     height: 40
   nodeName: WHMarkers
   nodeDescription: spawn markers for windmill hill route if needed
@@ -12040,7 +12040,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 25993.02
     y: 22537.504
-    width: 125.39
+    width: 126.35
     height: 40
   nodeName: SHWaypoints
   nodeDescription: Silbury Hill Route
@@ -12110,7 +12110,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 25773.709
     y: 22537.36
-    width: 112.43
+    width: 112.7
     height: 40
   nodeName: SHMarkers
   nodeDescription: spawn markers for silbury hill route if needed
@@ -12424,7 +12424,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 25991.385
     y: 22463.248
-    width: 124.14
+    width: 125.11
     height: 40
   nodeName: AEWaypoints
   nodeDescription: Adam and Eve route
@@ -12497,7 +12497,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 25775.914
     y: 22458.666
-    width: 111.19
+    width: 111.46
     height: 40
   nodeName: AEMarkers
   nodeDescription: spawn markers for adam and eve route if needed
