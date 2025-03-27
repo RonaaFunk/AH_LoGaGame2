@@ -157,6 +157,20 @@
             }
         }
 
+        public virtual List<Transform> GetMarkerTransforms(LocationVariable locationVar)
+        {
+            if (locationVar == null || locationVar.Value == null)
+            {
+                return null;
+            }
+
+            var relatedLocationMarkers = _spawnedObjects.FindAll(spawnedLocationMarkers =>
+                spawnedLocationMarkers != null && spawnedLocationMarkers.locationInfo != null &&
+                spawnedLocationMarkers.locationInfo.infoID == locationVar.Value.infoID);
+
+            return relatedLocationMarkers.ConvertAll(marker => marker.transform);
+        }
+
         private void ProcessNodeLocation(Node node)
         {
             LocationClickEventHandler handler = node._EventHandler as LocationClickEventHandler;
@@ -680,6 +694,11 @@
             return latlongDelta;
         }
 
+        public Transform TrackerTransform()
+        {
+            return tracker.transform;
+        }
+
         public Vector3 TrackerPosWorld()
         {
             return tracker.localPosition;
@@ -693,15 +712,19 @@
             if (_mapCam)
             {
                 _mapCam.enabled = !_mapCam.enabled;
-                
-                if (_mapCam.enabled){
-                    foreach (var ui in toHide){
+
+                if (_mapCam.enabled)
+                {
+                    foreach (var ui in toHide)
+                    {
                         ui.SetActive(false);
                     }
                 }
 
-                if (!_mapCam.enabled){
-                    foreach (var ui in toHide){
+                if (!_mapCam.enabled)
+                {
+                    foreach (var ui in toHide)
+                    {
                         ui.SetActive(true);
                     }
                 }
@@ -722,12 +745,12 @@
             var _mapCam = GetComponent<QuadTreeCameraMovement>()?._referenceCamera;
             //set the tracker cam to this cam
             tracker.GetComponent<CameraBillboard>()?.SetCanvasCam(_mapCam);
-            
+
             if (_mapCam.enabled == true)
             {
                 _mapCam.enabled = false;
                 toHide[0].SetActive(true);
-                
+
             }
         }
 

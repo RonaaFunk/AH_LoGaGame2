@@ -8,7 +8,8 @@ using UnityEngine;
 public class ShowLocationMarkers : Order
 {
     [Tooltip("The locations of the markers to reveal.")]
-    [SerializeField] protected LocationData[] locations;
+    [VariableProperty(typeof(LocationVariable))]
+    [SerializeField] protected LocationVariable[] locations;
 
     private SpawnOnMap map;
     public override void OnEnter()
@@ -43,10 +44,10 @@ public class ShowLocationMarkers : Order
 
     private void ShowLocations()
     {
-        foreach (LocationData location in locations)
+        foreach (LocationVariable location in locations)
         {
-            if (location.locationRef != null)
-                map.ShowLocationMarker(location.locationRef);
+            if (location != null && location.Value != null)
+                map.ShowLocationMarker(location);
         }
     }
 
@@ -62,9 +63,10 @@ public class ShowLocationMarkers : Order
     {
         bool hasReference = false;
 
-        foreach (LocationData location in locations)
+        foreach (LocationVariable location in locations)
         {
-            hasReference = location.locationRef == variable || hasReference;
+            if (location != null && location.Value != null)
+                hasReference = location.Value == variable || hasReference;
         }
         return hasReference;
     }
@@ -76,10 +78,10 @@ public class ShowLocationMarkers : Order
 
         if (locations != null)
         {
-            foreach (LocationData location in locations)
+            foreach (LocationVariable location in locations)
             {
-                if (location.locationRef != null)
-                    GetEngine().DetermineSubstituteVariables(location.locationRef.Key, referencedVariables);
+                if (location != null && location.Value != null)
+                    GetEngine().DetermineSubstituteVariables(location.Key, referencedVariables);
             }
         }
     }
