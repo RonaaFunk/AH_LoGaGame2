@@ -275,8 +275,6 @@ namespace LoGaCulture.LUTE
             }
 
             mesh.SetColors(colors);
-
-            Debug.Log("Hiding path section.");
         }
 
         private int FindClosestVertexIndex(List<Vector3> vertices, Vector3 target)
