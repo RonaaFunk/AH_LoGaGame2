@@ -37,7 +37,7 @@ namespace LoGaCulture.LUTE
         public void FoundEvidence(string evidenceID)
         {
                 evidenceDict[evidenceID] = true;
-                Debug.Log(evidenceDict[evidenceID]);
+                Debug.Log("Evidence " + evidenceID + "= " + evidenceDict[evidenceID]);
         }    
     
     }
