@@ -1,5 +1,6 @@
 using LoGaCulture.LUTE;
 using Mapbox.Examples;
+using Mapbox.Unity.Map;
 using MoreMountains.Tools;
 using System;
 using System.Collections.Generic;
@@ -1230,6 +1231,21 @@ public class BasicFlowEngine : MonoBehaviour, ISubstitutionHandler
         if (map == null)
         {
             map = FindObjectOfType<SpawnOnMap>();
+            if (map == null)
+            {
+                Debug.LogError("No map found in scene or in children");
+                return null;
+            }
+        }
+        return map;
+    }
+
+    public virtual AbstractMap GetAbstractMap()
+    {
+        var map = GetComponentInChildren<AbstractMap>();
+        if (map == null)
+        {
+            map = FindFirstObjectByType<AbstractMap>();
             if (map == null)
             {
                 Debug.LogError("No map found in scene or in children");
