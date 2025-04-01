@@ -567,7 +567,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26156.725
     y: 24815.637
-    width: 111.19
+    width: 111.46
     height: 40
   nodeName: AEMarkers
   nodeDescription: spawn markers for adam and eve route if needed
@@ -634,7 +634,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26290.725
     y: 24802.637
-    width: 124.14
+    width: 125.11
     height: 40
   nodeName: AEWaypoints
   nodeDescription: Adam and Eve route
@@ -935,7 +935,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26161.725
     y: 24868.637
-    width: 112.43
+    width: 112.7
     height: 40
   nodeName: SHMarkers
   nodeDescription: spawn markers for silbury hill route if needed
@@ -972,7 +972,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26292.725
     y: 24868.637
-    width: 125.39
+    width: 126.35
     height: 40
   nodeName: SHWaypoints
   nodeDescription: Silbury Hill Route
@@ -1633,7 +1633,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26156.725
     y: 24923.637
-    width: 116.16
+    width: 116.43
     height: 40
   nodeName: WHMarkers
   nodeDescription: spawn markers for windmill hill route if needed
@@ -1670,7 +1670,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26292.725
     y: 24948.637
-    width: 129.12
+    width: 130.08
     height: 40
   nodeName: WHWaypoints
   nodeDescription: Winmill Hill Circle Route
@@ -2019,7 +2019,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26439.725
     y: 24870.637
-    width: 74.75
+    width: 75.37
     height: 40
   nodeName: Wait
   nodeDescription: Allowing 2 seconds for the path to be drawn correctly
@@ -3277,7 +3277,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26171.725
     y: 24629.637
-    width: 151.63
+    width: 151.48999
     height: 40
   nodeName: Hide Path Section
   nodeDescription: Hides a section of a path
@@ -3316,7 +3316,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 26370.725
     y: 24627.637
-    width: 156.9
+    width: 156.98001
     height: 40
   nodeName: Show Path Section
   nodeDescription: Reveals a section of a path
@@ -4070,7 +4070,7 @@ PrefabInstance:
       objectReference: {fileID: 505594540}
     - target: {fileID: 8743389473436946330, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
       propertyPath: selectedOrders.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8743389473436946330, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
       propertyPath: 'selectedNodes.Array.data[0]'
