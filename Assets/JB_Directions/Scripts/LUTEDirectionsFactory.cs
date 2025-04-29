@@ -385,5 +385,11 @@ namespace LoGaCulture.LUTE
         {
             UpdatePathVisibility(hideStartEndPairs);
         }
+    
+        public void ClearDirections()
+        {
+        Array.Clear(locs, 0, locs.Length);
+        }
     }
+ 
 }
