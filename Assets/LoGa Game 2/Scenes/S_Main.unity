@@ -766,6 +766,7 @@ MonoBehaviour:
   _objectRender: {fileID: 37432971}
   evidenceManager: {fileID: 309730876}
   evidenceID: WB1
+  _evidenceBool: {fileID: 0}
   isFound: 0
 --- !u!114 &37432977 stripped
 MonoBehaviour:
@@ -2486,6 +2487,10 @@ PrefabInstance:
       value: A2
       objectReference: {fileID: 0}
     - target: {fileID: 5026198064855047058, guid: cad392f78dd283d4caa097e65e52adf1, type: 3}
+      propertyPath: _evidenceBool
+      value: 
+      objectReference: {fileID: 1792475954}
+    - target: {fileID: 5026198064855047058, guid: cad392f78dd283d4caa097e65e52adf1, type: 3}
       propertyPath: evidenceManager
       value: 
       objectReference: {fileID: 309730876}
@@ -2539,6 +2544,7 @@ MonoBehaviour:
   _objectRender: {fileID: 194882510}
   evidenceManager: {fileID: 309730876}
   evidenceID: A2
+  _evidenceBool: {fileID: 1792475954}
   isFound: 0
 --- !u!114 &194882516 stripped
 MonoBehaviour:
@@ -3522,6 +3528,10 @@ PrefabInstance:
       value: RD1
       objectReference: {fileID: 0}
     - target: {fileID: 5026198064855047058, guid: cad392f78dd283d4caa097e65e52adf1, type: 3}
+      propertyPath: _evidenceBool
+      value: 
+      objectReference: {fileID: 1792475952}
+    - target: {fileID: 5026198064855047058, guid: cad392f78dd283d4caa097e65e52adf1, type: 3}
       propertyPath: evidenceManager
       value: 
       objectReference: {fileID: 309730876}
@@ -3587,6 +3597,7 @@ MonoBehaviour:
   _objectRender: {fileID: 263809946}
   evidenceManager: {fileID: 309730876}
   evidenceID: RD1
+  _evidenceBool: {fileID: 1792475952}
   isFound: 0
 --- !u!114 &263809952 stripped
 MonoBehaviour:
@@ -4055,7 +4066,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &309730876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5002,6 +5013,7 @@ MonoBehaviour:
   _objectRender: {fileID: 354662072}
   evidenceManager: {fileID: 309730876}
   evidenceID: WB3
+  _evidenceBool: {fileID: 0}
   isFound: 0
 --- !u!114 &354662078 stripped
 MonoBehaviour:
@@ -6696,6 +6708,7 @@ MonoBehaviour:
   _objectRender: {fileID: 2049418604961648317}
   evidenceManager: {fileID: 309730876}
   evidenceID: WB3
+  _evidenceBool: {fileID: 1792475947}
   isFound: 0
 --- !u!1 &560595490
 GameObject:
@@ -7264,7 +7277,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8743389473436946330, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
       propertyPath: zoom
-      value: 0.55
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8743389473436946330, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
       propertyPath: demoMapMode
@@ -7272,11 +7285,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8743389473436946330, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
       propertyPath: scrollPos.x
-      value: -24466.328
+      value: -25288.709
       objectReference: {fileID: 0}
     - target: {fileID: 8743389473436946330, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
       propertyPath: scrollPos.y
-      value: -22411.504
+      value: -22914.963
       objectReference: {fileID: 0}
     - target: {fileID: 8743389473436946330, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
       propertyPath: nodeViewHeight
@@ -7352,7 +7365,7 @@ PrefabInstance:
       objectReference: {fileID: 1792475898}
     - target: {fileID: 8743389473436946330, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
       propertyPath: selectedNodes.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8743389473436946330, guid: 69d44f7ad440d2e4697c6536d141ba16, type: 3}
       propertyPath: 'variables.Array.data[10]'
@@ -10631,6 +10644,10 @@ PrefabInstance:
       value: A1
       objectReference: {fileID: 0}
     - target: {fileID: 5026198064855047058, guid: cad392f78dd283d4caa097e65e52adf1, type: 3}
+      propertyPath: _evidenceBool
+      value: 
+      objectReference: {fileID: 1792475955}
+    - target: {fileID: 5026198064855047058, guid: cad392f78dd283d4caa097e65e52adf1, type: 3}
       propertyPath: evidenceManager
       value: 
       objectReference: {fileID: 309730876}
@@ -10696,6 +10713,7 @@ MonoBehaviour:
   _objectRender: {fileID: 677024148}
   evidenceManager: {fileID: 309730876}
   evidenceID: A1
+  _evidenceBool: {fileID: 1792475955}
   isFound: 0
 --- !u!114 &677024154 stripped
 MonoBehaviour:
@@ -10757,6 +10775,7 @@ MonoBehaviour:
   _objectRender: {fileID: 2049418604833685472}
   evidenceManager: {fileID: 309730876}
   evidenceID: A1
+  _evidenceBool: {fileID: 1792475955}
   isFound: 0
 --- !u!114 &690407204
 MonoBehaviour:
@@ -10774,6 +10793,7 @@ MonoBehaviour:
   _objectRender: {fileID: 2049418604826604386}
   evidenceManager: {fileID: 309730876}
   evidenceID: RD3
+  _evidenceBool: {fileID: 0}
   isFound: 0
 --- !u!1 &691397526
 GameObject:
@@ -11333,6 +11353,7 @@ MonoBehaviour:
   _objectRender: {fileID: 2049418604855173093}
   evidenceManager: {fileID: 309730876}
   evidenceID: RD2
+  _evidenceBool: {fileID: 1792475951}
   isFound: 0
 --- !u!1 &732619630 stripped
 GameObject:
@@ -12255,7 +12276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &810794644
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14343,6 +14364,7 @@ MonoBehaviour:
   _objectRender: {fileID: 2049418605177243333}
   evidenceManager: {fileID: 309730876}
   evidenceID: WB2
+  _evidenceBool: {fileID: 1792475948}
   isFound: 0
 --- !u!1 &1022817515
 GameObject:
@@ -15749,6 +15771,7 @@ MonoBehaviour:
   _objectRender: {fileID: 2049418603375370143}
   evidenceManager: {fileID: 309730876}
   evidenceID: A3
+  _evidenceBool: {fileID: 1792475953}
   isFound: 0
 --- !u!1 &1142223382
 GameObject:
@@ -18493,6 +18516,7 @@ MonoBehaviour:
   _objectRender: {fileID: 2049418603245078108}
   evidenceManager: {fileID: 309730876}
   evidenceID: A2
+  _evidenceBool: {fileID: 1792475954}
   isFound: 0
 --- !u!1 &1269662276
 GameObject:
@@ -18725,7 +18749,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 8400000, guid: f98f24ce6d4531c4c8f1258d723c7dc3, type: 2}
+  m_Texture: {fileID: 8400000, guid: 57f7875603027de459315dc7b0ae790a, type: 2}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -19487,6 +19511,7 @@ MonoBehaviour:
   _objectRender: {fileID: 1350692320}
   evidenceManager: {fileID: 309730876}
   evidenceID: RD3
+  _evidenceBool: {fileID: 0}
   isFound: 0
 --- !u!114 &1350692326 stripped
 MonoBehaviour:
@@ -20605,6 +20630,10 @@ PrefabInstance:
       value: A3
       objectReference: {fileID: 0}
     - target: {fileID: 5026198064855047058, guid: cad392f78dd283d4caa097e65e52adf1, type: 3}
+      propertyPath: _evidenceBool
+      value: 
+      objectReference: {fileID: 1792475953}
+    - target: {fileID: 5026198064855047058, guid: cad392f78dd283d4caa097e65e52adf1, type: 3}
       propertyPath: evidenceManager
       value: 
       objectReference: {fileID: 309730876}
@@ -20670,6 +20699,7 @@ MonoBehaviour:
   _objectRender: {fileID: 1420643209}
   evidenceManager: {fileID: 309730876}
   evidenceID: A3
+  _evidenceBool: {fileID: 1792475953}
   isFound: 0
 --- !u!114 &1420643215 stripped
 MonoBehaviour:
@@ -20947,6 +20977,7 @@ MonoBehaviour:
   _objectRender: {fileID: 2049418603681592621}
   evidenceManager: {fileID: 309730876}
   evidenceID: RD1
+  _evidenceBool: {fileID: 1792475952}
   isFound: 0
 --- !u!1 &1441279723
 GameObject:
@@ -21812,6 +21843,10 @@ PrefabInstance:
       value: RD2
       objectReference: {fileID: 0}
     - target: {fileID: 5026198064855047058, guid: cad392f78dd283d4caa097e65e52adf1, type: 3}
+      propertyPath: _evidenceBool
+      value: 
+      objectReference: {fileID: 1792475951}
+    - target: {fileID: 5026198064855047058, guid: cad392f78dd283d4caa097e65e52adf1, type: 3}
       propertyPath: evidenceManager
       value: 
       objectReference: {fileID: 309730876}
@@ -21865,6 +21900,7 @@ MonoBehaviour:
   _objectRender: {fileID: 1486847849}
   evidenceManager: {fileID: 309730876}
   evidenceID: RD2
+  _evidenceBool: {fileID: 1792475951}
   isFound: 0
 --- !u!114 &1486847855 stripped
 MonoBehaviour:
@@ -23427,7 +23463,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 8400000, guid: f98f24ce6d4531c4c8f1258d723c7dc3, type: 2}
+  m_Texture: {fileID: 8400000, guid: 20516b279ad2b744dbb99070091684df, type: 2}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -24456,6 +24492,7 @@ MonoBehaviour:
   _objectRender: {fileID: 2049418603743566131}
   evidenceManager: {fileID: 309730876}
   evidenceID: WB1
+  _evidenceBool: {fileID: 1792475949}
   isFound: 0
 --- !u!1 &1783689408
 GameObject:
@@ -25666,7 +25703,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 27099.846
-    y: 21834.578
+    y: 21833.15
     width: 96.08
     height: 40
   nodeName: Auroch1
@@ -38805,9 +38842,9 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 26395.336
-    y: 21784.578
+    y: 21783.15
     width: 935.72266
-    height: 525.5625
+    height: 526.99023
   nodeName: Auroch
   nodeDescription: Basic building block of a narrative engine
   groupDescription: A series of nodes that can be executed as a group
@@ -42612,7 +42649,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 26504.871
-    y: 23832.707
+    y: 23830.207
     width: 192.08
     height: 40
   nodeName: A2_InfoPanel_Collections
@@ -44315,7 +44352,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 27717.572
+    x: 27719.39
     y: 22580.62
     width: 131.91
     height: 40
@@ -44685,7 +44722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentNode: {fileID: 1792476036}
   buttons:
-  - {fileID: 6568331052593122866}
+  - {fileID: 6568331053307473485}
 --- !u!114 &1792476034
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -44945,7 +44982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentNode: {fileID: 1792476040}
   buttons:
-  - {fileID: 6568331052593122866}
+  - {fileID: 6568331053168801678}
 --- !u!114 &1792476038
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -45167,8 +45204,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 27732.889
-    y: 22018.672
+    x: 27731.46
+    y: 22020.1
     width: 123.73
     height: 40
   nodeName: A2_InfoPanel
@@ -55396,6 +55433,7 @@ MonoBehaviour:
   _objectRender: {fileID: 2131037839}
   evidenceManager: {fileID: 309730876}
   evidenceID: WB2
+  _evidenceBool: {fileID: 0}
   isFound: 0
 --- !u!114 &2131037845 stripped
 MonoBehaviour:
@@ -55973,9 +56011,9 @@ RectTransform:
   - {fileID: 284781002519989694}
   m_Father: {fileID: 1022817516}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 720, y: -890.10004}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1306.3, y: 685.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1181836634303046278
@@ -56015,9 +56053,9 @@ RectTransform:
   - {fileID: 284781004006092225}
   m_Father: {fileID: 1022817516}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 720, y: -2529.9001}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1306.3, y: 685.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1181836634739020279
@@ -56036,9 +56074,9 @@ RectTransform:
   - {fileID: 284781004135855106}
   m_Father: {fileID: 1022817516}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 720, y: -1710}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1306.3, y: 685.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1181836635317194392
@@ -59381,6 +59419,7 @@ MonoBehaviour:
   _objectRender: {fileID: 4497252018991616923}
   evidenceManager: {fileID: 309730876}
   evidenceID: WB2
+  _evidenceBool: {fileID: 1792475948}
   isFound: 0
 --- !u!114 &5026198065405682002
 MonoBehaviour:
@@ -59398,6 +59437,7 @@ MonoBehaviour:
   _objectRender: {fileID: 4497252019439737827}
   evidenceManager: {fileID: 309730876}
   evidenceID: WB3
+  _evidenceBool: {fileID: 1792475947}
   isFound: 0
 --- !u!114 &5026198065517309962
 MonoBehaviour:
@@ -59415,6 +59455,7 @@ MonoBehaviour:
   _objectRender: {fileID: 1697857979}
   evidenceManager: {fileID: 309730876}
   evidenceID: RD2
+  _evidenceBool: {fileID: 1792475951}
   isFound: 0
 --- !u!114 &5026198065529360399
 MonoBehaviour:
@@ -59432,6 +59473,7 @@ MonoBehaviour:
   _objectRender: {fileID: 1998401961}
   evidenceManager: {fileID: 309730876}
   evidenceID: A1
+  _evidenceBool: {fileID: 1792475955}
   isFound: 0
 --- !u!114 &5026198065541160077
 MonoBehaviour:
@@ -59449,6 +59491,7 @@ MonoBehaviour:
   _objectRender: {fileID: 347683356}
   evidenceManager: {fileID: 309730876}
   evidenceID: RD3
+  _evidenceBool: {fileID: 0}
   isFound: 0
 --- !u!114 &5026198065738324674
 MonoBehaviour:
@@ -59466,6 +59509,7 @@ MonoBehaviour:
   _objectRender: {fileID: 1285099802}
   evidenceManager: {fileID: 309730876}
   evidenceID: RD1
+  _evidenceBool: {fileID: 1792475952}
   isFound: 0
 --- !u!114 &5026198065918652528
 MonoBehaviour:
@@ -59483,6 +59527,7 @@ MonoBehaviour:
   _objectRender: {fileID: 1441279723}
   evidenceManager: {fileID: 309730876}
   evidenceID: A3
+  _evidenceBool: {fileID: 1792475953}
   isFound: 0
 --- !u!114 &5026198066040023475
 MonoBehaviour:
@@ -59500,6 +59545,7 @@ MonoBehaviour:
   _objectRender: {fileID: 148674448}
   evidenceManager: {fileID: 309730876}
   evidenceID: A2
+  _evidenceBool: {fileID: 1792475954}
   isFound: 0
 --- !u!114 &5026198066620036828
 MonoBehaviour:
@@ -59517,6 +59563,7 @@ MonoBehaviour:
   _objectRender: {fileID: 4497252018246356077}
   evidenceManager: {fileID: 309730876}
   evidenceID: WB1
+  _evidenceBool: {fileID: 1792475949}
   isFound: 0
 --- !u!114 &5357383628587544008
 MonoBehaviour:
